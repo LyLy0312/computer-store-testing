@@ -1,0 +1,107 @@
+﻿@model QLWEB.Models.KhachHang
+
+@{
+    ViewBag.Title = "Đăng ký tài khoản";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <style>
+        body {
+            background-color: #5a505e;
+        }
+
+        .box {
+            padding-top: 25px;
+            margin: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            height: 60%;
+            border: 1px black solid;
+            background-color: #a8eedd;
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .box_mot {
+            width: auto;
+            margin: 20px;
+            text-align: center;
+        }
+
+        button {
+            background-color: deepskyblue;
+            border-radius: 5px;
+        }
+
+            button:hover {
+                background-color: dodgerblue;
+            }
+
+        label {
+            text-align: left;
+        }
+
+        .error-message {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <br /><br />
+    <div class="box">
+        <h2>Đăng ký tài khoản</h2>
+
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="error-message">@ViewBag.ErrorMessage</div>
+        }
+
+        @using (Html.BeginForm())
+        {
+            <div class="box_mot">
+                <label for="TenKhachHang">Tên khách hàng</label> <br />
+                @Html.TextBoxFor(m => m.TenKhachHang)<br />
+                @Html.ValidationMessageFor(m => m.TenKhachHang, "", new { @class = "error-message" })
+            </div>
+
+            <div class="box_mot">
+                <label for="SoDienThoai">Số điện thoại</label> <br />
+                @Html.TextBoxFor(m => m.SoDienThoai)<br />
+                @Html.ValidationMessageFor(m => m.SoDienThoai, "", new { @class = "error-message" })
+            </div>
+
+            <div class="box_mot">
+                <label for="DiaChi">Địa chỉ</label> <br />
+                @Html.TextBoxFor(m => m.DiaChi)<br />
+                @Html.ValidationMessageFor(m => m.DiaChi, "", new { @class = "error-message" })
+            </div>
+
+            <div class="box_mot">
+                <label for="Email">Email</label> <br />
+                @Html.TextBoxFor(m => m.Email)<br />
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "error-message" })
+            </div>
+
+            <div class="box_mot">
+                <label for="MatKhau">Mật khẩu</label> <br />
+                @Html.PasswordFor(m => m.MatKhau)<br />
+                @Html.ValidationMessageFor(m => m.MatKhau, "", new { @class = "error-message" })
+            </div>
+
+            <div class="box_mot_">
+                <button type="submit" style="width: 34%; height: 50px; font-weight: 600;">Đăng Ký</button>
+            </div>
+            
+            <a href="/MayTinh/Login">Đăng nhập nếu đã có tài khoản</a>
+        }
+    </div>
+</body>
+</html>

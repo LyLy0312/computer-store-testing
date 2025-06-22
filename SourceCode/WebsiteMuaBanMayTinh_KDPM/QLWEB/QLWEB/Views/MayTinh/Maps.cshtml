@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Maps";
+    Layout = "~/Views/Shared/_Layout_.cshtml";
+}
+
+<div style="z-index: 1000; float: right; font-size: large; margin: 10px 0;">
+    <form onsubmit="selectLocation(event)" style="display: flex; align-items: center; gap: 10px;">
+        <label for="location">Chọn địa điểm cơ sở:</label>
+        <select id="location">
+            <option value="10.8231,106.6297">Cơ sở 1</option>
+            <option value="10.7728,106.6579">Cơ sở 2</option>
+            <option value="10.7600,106.6828">Cơ sở 3</option>
+            <option value="16.0544,108.2022">Cơ sở 4</option>
+        </select>
+        <button type="submit" style="padding: 5px 15px;">Tìm</button>
+    </form>
+</div>
+<br /><br />
+<div id="map" style="height: 900px; margin-top: 20px; border: 1px solid #ccc;"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgNFPEnhrkO5O96yI-ekT6489BgCZXYng&libraries=maps,marker&callback=initMap" defer></script>
+
+<script>
+    let map; 
+    let marker; 
+
+    function initMap() {
+        const defaultLocation = { lat: 10.8231, lng: 106.6297 }; // Cơ sở 1
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: defaultLocation,
+            zoom: 14,
+        });
+
+        marker = new google.maps.Marker({
+            position: defaultLocation,
+            map: map,
+        });
+    }
+
+    function selectLocation(event) {
+        event.preventDefault(); 
+
+        const locationElement = document.getElementById("location");
+        const locationValue = locationElement.value;
+
+        if (locationValue) {
+            const [latitude, longitude] = locationValue.split(",").map(coord => parseFloat(coord));
+            const newLocation = { lat: latitude, lng: longitude };
+
+            map.setCenter(newLocation);
+            marker.setPosition(newLocation);
+        } else {
+            alert("Vui lòng chọn một cơ sở!");
+        }
+    }
+
+    // Gọi hàm khởi tạo bản đồ khi API đã tải xong
+    window.initMap = initMap;
+</script>
+

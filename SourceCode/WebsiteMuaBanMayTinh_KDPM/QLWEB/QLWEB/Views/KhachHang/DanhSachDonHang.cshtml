@@ -1,0 +1,115 @@
+﻿@model List<QLWEB.Models.DonHang>
+@{
+    ViewBag.Title = "DanhSachDonHang";
+    Layout = "~/Views/Shared/_Layout_.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh Sách Đơn Hàng Của Bạn</title>
+    <style>
+        .order-container {
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+            background-color: #fff;
+            color: #333;
+            max-width: 1000px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .order-container h3 {
+                text-align: center;
+                color: #4CAF50;
+            }
+
+            .order-container table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+                background-color: #fff;
+            }
+
+            .order-container th, .order-container td {
+                padding: 12px;
+                border-bottom: 1px solid #ddd;
+                text-align: left;
+            }
+
+            .order-container th {
+                background-color: #4CAF50;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            .order-container tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            .order-container tr:hover {
+                background-color: #f1f1f1;
+                transition: 0.2s;
+            }
+
+            .order-container a {
+                text-decoration: none;
+                color: #4CAF50;
+                font-weight: bold;
+                margin-right: 8px;
+            }
+
+                .order-container a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="order-container">
+        <h3>Đơn hàng của bạn</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ngày đặt</th>
+                    <th>Tổng Tiền</th>
+                    <th>Trạng Thái</th>
+                    <th>Phương thức thanh toán</th>
+                    <th>Địa chỉ nhận hàng</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>@(Model[i].NgayDatHang.HasValue ? Model[i].NgayDatHang.Value.ToString("dd/MM/yyyy") : "")</td>
+                        <td>@Model[i].TongTien VNĐ</td>
+                        <td>@Model[i].TrangThaiDonHang</td>
+                        <td>@Model[i].PhuongThucThanhToan</td>
+                        <td>@Model[i].DiaChiGiaoHang</td>
+                        <td>
+                            <a href="@Url.Action("XemDonHang", "KhachHang", new { madh = Model[i].DonHangID })">Xem</a>
+                            @if (Model[i].TrangThaiDonHang != "Hoàn thành" && Model[i].TrangThaiDonHang != "Bị huỷ")
+                            {
+                                <a href="@Url.Action("CapNhatTrangThai", "KhachHang", new { madh = Model[i].DonHangID, trangthai = "Hoàn thành" })"
+                                   onclick="return confirm('Bạn có chắc chắn muốn đánh dấu đơn hàng là Hoàn thành không?')">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Hoàn thành&nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                                <a href="@Url.Action("CapNhatTrangThai", "KhachHang", new { madh = Model[i].DonHangID, trangthai = "Bị huỷ" })"
+                                   onclick="return confirm('Bạn có chắc chắn muốn huỷ đơn hàng này không?')">Huỷ
+                                </a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div style="text-align:center; margin-top:20px;">
+            <a href="@Url.Action("ThongTin", "KhachHang")" class="btn btn-primary">Quay lại</a>
+        </div>
+    </div>
+</body>
+</html>

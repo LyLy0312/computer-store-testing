@@ -1,0 +1,249 @@
+﻿@using QLWEB.Models
+
+@{
+    ViewBag.Title = "GioiThieu";
+    Layout = "~/Views/Shared/_Layout_.cshtml";
+    var tam = ViewData["gioithieu"] as List<MT>;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu</title>
+    <link rel="stylesheet" href="~/Content/Css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .hero-section {
+            background-image: url('/Images/bg.jpg');
+            background-size: auto;
+            background-position: center;
+            height: 400px;
+            color: orangered;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px
+            position: relative;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .hero-section h1 {
+                font-size: 4rem;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .product-card img {
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card img:hover {
+                transform: scale(1.05);
+        }
+
+        .product-card .card-body {
+            text-align: center;
+        }
+
+        .product-card .btn-primary {
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card .btn-primary:hover {
+                background-color: #0056b3;
+        }
+
+        .service-icons i {
+            font-size: 2.5rem;
+            margin: 20px;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        .service-icons i:hover {
+                color: #0056b3;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+        }
+
+        .contact-info a {
+            color: #007bff;
+        }
+
+        .contact-info a:hover {
+                text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+                color: #bbb;
+                text-decoration: none;
+        }
+
+        .footer a:hover {
+                    text-decoration: underline;
+        }
+
+        .about-img {
+            width: 100%; 
+            height: auto;
+            border-radius: 8px; 
+        }
+        .falling-leaf {
+            width: 40px;
+            height: auto;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero-section">
+        <div>
+            @*<h1>Chào Mừng Đến Với Cửa Hàng Của Chúng Tôi</h1>
+            <p>Chúng tôi cung cấp những chiếc laptop chất lượng, uy tín với giá cả hợp lý cho bạn.</p>*@
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="section-title">Giới Thiệu Về Chúng Tôi</div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Chúng tôi là một trong những cửa hàng bán laptop hàng đầu, với các dòng laptop nổi tiếng từ Apple, Dell, HP, Lenovo, và Acer. Sứ mệnh của chúng tôi là mang lại sự hài lòng cho khách hàng qua những sản phẩm chất lượng và dịch vụ hậu mãi tuyệt vời.</p>
+                <p>Chúng tôi cam kết cung cấp các laptop chất lượng cao, phù hợp với nhiều đối tượng người dùng từ học sinh, sinh viên cho đến các doanh nghiệp và chuyên gia.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="~/Images/anhgioithieu.jpg" style="width:95%;" class="img-fluid about-img" alt="Giới thiệu">
+            </div>
+        </div>
+    </section>
+    <section class="container py-5">
+        <div class="section-title">Sản Phẩm Nổi Bật</div>
+        <div class="row">
+            @foreach (var x in tam)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="~/Images/@Url.Content(x.DuongDan)" class="card-img-top" alt="Laptop 1">
+                        <div class="card-body">
+                            <h5 class="card-title">@x.TenSP</h5>
+                            <p class="card-text">@x.MoTa</p>
+                            <a href="@Url.Action("Details", "MayTinh", new { id = x.MTID })" class="btn btn-primary">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            }
+            @*<div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="./Image/anh1.jpg" class="card-img-top" alt="Laptop 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop HP Spectre x360</h5>
+                        <p class="card-text">Màn hình 13.3 inch, CPU i7, RAM 16GB</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="./Image/anh1.jpg" class="card-img-top" alt="Laptop 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop MacBook Air</h5>
+                        <p class="card-text">Màn hình 13 inch, Apple M1 chip, 8GB RAM</p>
+                        <a href="#" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>*@
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="section-title">Dịch Vụ Của Chúng Tôi</div>
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <i class="fa fa-truck service-icons"></i>
+                <h5>Miễn Phí Vận Chuyển</h5>
+                <p>Chúng tôi cung cấp dịch vụ vận chuyển miễn phí cho các đơn hàng trên toàn quốc.</p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <i class="fa fa-headphones service-icons"></i>
+                <h5>Hỗ Trợ 24/7</h5>
+                <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn bất cứ lúc nào qua điện thoại hoặc email.</p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <i class="fa fa-cogs service-icons"></i>
+                <h5>Bảo Hành Tận Nơi</h5>
+                <p>Chúng tôi cung cấp dịch vụ bảo hành tận nơi cho các sản phẩm laptop của bạn.</p>
+            </div>
+        </div>
+    </section>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+
+    <script>
+    $(document).ready(function () {
+        // Mảng chứa tên các file ảnh lá phong (đặt trong thư mục Images)
+        var leafImages = ['laphong.png', 'laphong.png', 'laphong.png'];
+
+        function createLeaf() {
+            var leafSrc = '@Url.Content("~/Images/")' + leafImages[Math.floor(Math.random() * leafImages.length)];
+            var $leaf = $('<img class="falling-leaf" src="' + leafSrc + '">');
+
+            // Đặt vị trí ban đầu ngẫu nhiên theo chiều ngang và độ trong suốt
+            var startLeft = Math.random() * $(window).width();
+            $leaf.css({
+                top: '-50px',
+                left: startLeft,
+                opacity: Math.random() * 0.5 + 0.5 // độ mờ từ 0.5 đến 1
+            });
+
+            // Thêm lá vào body
+            $('body').append($leaf);
+
+            // Tính toán thời gian rơi và độ lệch ngang (tạo hiệu ứng xoay quanh)
+            var duration = Math.random() * 5000 + 5000; // thời gian từ 5 đến 10 giây
+            var endLeft = startLeft + (Math.random() * 100 - 50);
+
+            // Animate lá từ trên xuống dưới
+            $leaf.animate({
+                top: $(window).height() + 50,
+                left: endLeft
+            }, duration, 'linear', function () {
+                // Sau khi animation hoàn thành, loại bỏ lá
+                $(this).remove();
+            });
+        }
+
+        // Tạo lá mới mỗi 500 mili giây (có thể điều chỉnh khoảng thời gian nếu cần)
+        setInterval(createLeaf, 500);
+    });
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,424 @@
+{
+  "id": "7f2e165c-1c8c-474a-888a-e6f25bef21cf",
+  "version": "2.0",
+  "name": "AdminProduct",
+  "url": "http://localhost:54551",
+  "tests": [{
+    "id": "7b6a51eb-c8f6-4b70-ba54-fb8d77ddfb7c",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "1ec9e66c-fa52-4722-a8df-b666ebd5d922",
+    "name": "AddProductAndInsert",
+    "commands": [{
+      "id": "f59a6a84-6c2f-4a3c-90af-434303dde4a5",
+      "comment": "",
+      "command": "open",
+      "target": "/MayTinh/test",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "871da2dd-80bb-4508-8947-471e29b7a50e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "858b312b-1a86-4c72-8249-96e75b94cb5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-between > button",
+      "targets": [
+        ["css=.justify-content-between > button", "css:finder"],
+        ["xpath=//button[@onclick='openMenu()']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'☰ Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6d82700-3983-44c4-a65b-8479a4757af9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Thêm sản phẩm",
+      "targets": [
+        ["linkText=Thêm sản phẩm", "linkText"],
+        ["css=.dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Thêm sản phẩm')]", "xpath:link"],
+        ["xpath=//div[@id='menuModal']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/MayTinh/Add')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Thêm sản phẩm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "971d96ee-7dbf-486a-af87-ccd5b587fa68",
+      "comment": "",
+      "command": "click",
+      "target": "id=MTID",
+      "targets": [
+        ["id=MTID", "id"],
+        ["name=MTID", "name"],
+        ["css=#MTID", "css:finder"],
+        ["xpath=//input[@id='MTID']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3988b561-abf3-4933-8bbf-dcc8e1350ce4",
+      "comment": "",
+      "command": "type",
+      "target": "id=MTID",
+      "targets": [
+        ["id=MTID", "id"],
+        ["name=MTID", "name"],
+        ["css=#MTID", "css:finder"],
+        ["xpath=//input[@id='MTID']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "01"
+    }, {
+      "id": "7e641eaa-f41e-4b1a-a106-e113884ad4ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=TenSP",
+      "targets": [
+        ["id=TenSP", "id"],
+        ["name=TenSP", "name"],
+        ["css=#TenSP", "css:finder"],
+        ["xpath=//input[@id='TenSP']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37f65e8d-84ca-44e0-8a6e-c5cb115894c6",
+      "comment": "",
+      "command": "type",
+      "target": "id=TenSP",
+      "targets": [
+        ["id=TenSP", "id"],
+        ["name=TenSP", "name"],
+        ["css=#TenSP", "css:finder"],
+        ["xpath=//input[@id='TenSP']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Laptop ABC"
+    }, {
+      "id": "a30647ab-df51-487e-af01-a6fcb47d42f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ThuongHieu",
+      "targets": [
+        ["id=ThuongHieu", "id"],
+        ["name=ThuongHieu", "name"],
+        ["css=#ThuongHieu", "css:finder"],
+        ["xpath=//input[@id='ThuongHieu']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eabc42f-7727-473d-93e4-bf145376f5a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=ThuongHieu",
+      "targets": [
+        ["id=ThuongHieu", "id"],
+        ["name=ThuongHieu", "name"],
+        ["css=#ThuongHieu", "css:finder"],
+        ["xpath=//input[@id='ThuongHieu']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Dell"
+    }, {
+      "id": "aab7ae27-3271-4690-aba5-0327958da12e",
+      "comment": "",
+      "command": "click",
+      "target": "id=DanhMucID",
+      "targets": [
+        ["id=DanhMucID", "id"],
+        ["name=DanhMucID", "name"],
+        ["css=#DanhMucID", "css:finder"],
+        ["xpath=//select[@id='DanhMucID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Chọn danh mục\nLaptop\nDesktop\nTablet\nMonitor\nAccessories')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9fb3119-c85a-4d2b-88d4-a16cd14c63e8",
+      "comment": "",
+      "command": "select",
+      "target": "id=DanhMucID",
+      "targets": [],
+      "value": "label=Laptop"
+    }, {
+      "id": "3b4b87e4-44f7-48ee-bb5c-6bcaeebf610b",
+      "comment": "",
+      "command": "click",
+      "target": "id=MoTa",
+      "targets": [
+        ["id=MoTa", "id"],
+        ["name=MoTa", "name"],
+        ["css=#MoTa", "css:finder"],
+        ["xpath=//textarea[@id='MoTa']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76bd490c-5145-4b67-ad31-28ed1b4b0655",
+      "comment": "",
+      "command": "type",
+      "target": "id=MoTa",
+      "targets": [
+        ["id=MoTa", "id"],
+        ["name=MoTa", "name"],
+        ["css=#MoTa", "css:finder"],
+        ["xpath=//textarea[@id='MoTa']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "1b57d8c3-e196-42ec-a72a-662f60737d3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=Gia",
+      "targets": [
+        ["id=Gia", "id"],
+        ["name=Gia", "name"],
+        ["css=#Gia", "css:finder"],
+        ["xpath=//input[@id='Gia']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "761f37f3-db28-453c-8439-c3e542b3c839",
+      "comment": "",
+      "command": "type",
+      "target": "id=Gia",
+      "targets": [
+        ["id=Gia", "id"],
+        ["name=Gia", "name"],
+        ["css=#Gia", "css:finder"],
+        ["xpath=//input[@id='Gia']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "15000000,00"
+    }, {
+      "id": "f046a06c-03c2-4ba1-a2ed-157168bc0650",
+      "comment": "",
+      "command": "click",
+      "target": "id=SoLuongKho",
+      "targets": [
+        ["id=SoLuongKho", "id"],
+        ["name=SoLuongKho", "name"],
+        ["css=#SoLuongKho", "css:finder"],
+        ["xpath=//input[@id='SoLuongKho']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04515887-a547-49bd-b13c-da35247f8938",
+      "comment": "",
+      "command": "type",
+      "target": "id=SoLuongKho",
+      "targets": [
+        ["id=SoLuongKho", "id"],
+        ["name=SoLuongKho", "name"],
+        ["css=#SoLuongKho", "css:finder"],
+        ["xpath=//input[@id='SoLuongKho']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "33400f90-060d-4847-ad6c-880963b18c1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=RAM",
+      "targets": [
+        ["id=RAM", "id"],
+        ["name=RAM", "name"],
+        ["css=#RAM", "css:finder"],
+        ["xpath=//input[@id='RAM']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e59321d-1de5-483b-9240-799fe9bdaa36",
+      "comment": "",
+      "command": "type",
+      "target": "id=RAM",
+      "targets": [
+        ["id=RAM", "id"],
+        ["name=RAM", "name"],
+        ["css=#RAM", "css:finder"],
+        ["xpath=//input[@id='RAM']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "N/A"
+    }, {
+      "id": "ffcedae9-2480-4c38-aaed-14f88f007774",
+      "comment": "",
+      "command": "click",
+      "target": "id=ViXuLy",
+      "targets": [
+        ["id=ViXuLy", "id"],
+        ["name=ViXuLy", "name"],
+        ["css=#ViXuLy", "css:finder"],
+        ["xpath=//input[@id='ViXuLy']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6e36aa3-7da9-499c-abe0-c395046a93bb",
+      "comment": "",
+      "command": "type",
+      "target": "id=ViXuLy",
+      "targets": [
+        ["id=ViXuLy", "id"],
+        ["name=ViXuLy", "name"],
+        ["css=#ViXuLy", "css:finder"],
+        ["xpath=//input[@id='ViXuLy']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": "N/A"
+    }, {
+      "id": "f7e2907f-82a4-4ee0-85fd-03577a924570",
+      "comment": "",
+      "command": "click",
+      "target": "id=LuuTru",
+      "targets": [
+        ["id=LuuTru", "id"],
+        ["name=LuuTru", "name"],
+        ["css=#LuuTru", "css:finder"],
+        ["xpath=//input[@id='LuuTru']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da93aeba-a25e-494c-a241-336759ba5570",
+      "comment": "",
+      "command": "type",
+      "target": "id=LuuTru",
+      "targets": [
+        ["id=LuuTru", "id"],
+        ["name=LuuTru", "name"],
+        ["css=#LuuTru", "css:finder"],
+        ["xpath=//input[@id='LuuTru']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": "256GB SSD"
+    }, {
+      "id": "8035e5ec-fe1d-47f9-bc07-f239ab8da543",
+      "comment": "",
+      "command": "click",
+      "target": "id=KichThuocManHinh",
+      "targets": [
+        ["id=KichThuocManHinh", "id"],
+        ["name=KichThuocManHinh", "name"],
+        ["css=#KichThuocManHinh", "css:finder"],
+        ["xpath=//input[@id='KichThuocManHinh']", "xpath:attributes"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac4f853d-5e99-42af-83a6-353a472c7f06",
+      "comment": "",
+      "command": "type",
+      "target": "id=KichThuocManHinh",
+      "targets": [
+        ["id=KichThuocManHinh", "id"],
+        ["name=KichThuocManHinh", "name"],
+        ["css=#KichThuocManHinh", "css:finder"],
+        ["xpath=//input[@id='KichThuocManHinh']", "xpath:attributes"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": "N/A"
+    }, {
+      "id": "f6f2aa89-56f1-47a2-bb6c-1de82b4322e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=MauSac",
+      "targets": [
+        ["id=MauSac", "id"],
+        ["name=MauSac", "name"],
+        ["css=#MauSac", "css:finder"],
+        ["xpath=//input[@id='MauSac']", "xpath:attributes"],
+        ["xpath=//div[12]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67b436e6-4fc9-4001-9b2e-55ab4beaadf4",
+      "comment": "",
+      "command": "type",
+      "target": "id=MauSac",
+      "targets": [
+        ["id=MauSac", "id"],
+        ["name=MauSac", "name"],
+        ["css=#MauSac", "css:finder"],
+        ["xpath=//input[@id='MauSac']", "xpath:attributes"],
+        ["xpath=//div[12]/input", "xpath:position"]
+      ],
+      "value": "Black"
+    }, {
+      "id": "518df63e-1d1c-4c50-af7b-5b9e3347d1ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=DungLuongPin",
+      "targets": [
+        ["id=DungLuongPin", "id"],
+        ["name=DungLuongPin", "name"],
+        ["css=#DungLuongPin", "css:finder"],
+        ["xpath=//input[@id='DungLuongPin']", "xpath:attributes"],
+        ["xpath=//div[13]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f7819a9-ec0e-4dff-8c58-f14f2fa8ad37",
+      "comment": "",
+      "command": "type",
+      "target": "id=DungLuongPin",
+      "targets": [
+        ["id=DungLuongPin", "id"],
+        ["name=DungLuongPin", "name"],
+        ["css=#DungLuongPin", "css:finder"],
+        ["xpath=//input[@id='DungLuongPin']", "xpath:attributes"],
+        ["xpath=//div[13]/input", "xpath:position"]
+      ],
+      "value": "N/A"
+    }, {
+      "id": "a4bae864-f5b3-4e64-b406-636266593997",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Thêm sản phẩm']", "xpath:attributes"],
+        ["xpath=//div[15]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84036763-97ed-40ed-9a43-15e060e0260c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Quay lại",
+      "targets": [
+        ["linkText=Quay lại", "linkText"],
+        ["css=.btn:nth-child(16)", "css:finder"],
+        ["xpath=//a[contains(text(),'Quay lại')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/MayTinh/test')]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Quay lại')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a4e64420-569a-4668-8f6a-4ad66e4d07f2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7b6a51eb-c8f6-4b70-ba54-fb8d77ddfb7c"]
+  }],
+  "urls": ["http://localhost:54551/"],
+  "plugins": []
+}

@@ -1,0 +1,405 @@
+﻿@using QLWEB.Models
+@model DonHang_
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/_Layout_.cshtml";
+    var lst = Session["GioHang"] as List<GioHang>;
+}
+
+<html>
+<head>
+    <title>
+        Shopping Cart
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container_ {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .cart {
+            width: 65%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary {
+            max-width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+            background-color: #90f3cf;
+        }
+
+        .cart h2, .summary h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .cart table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cart table th, .cart table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart table th {
+            font-weight: bold;
+        }
+
+        .cart table td img {
+            width: 100px;
+        }
+
+        .cart table td .product-name {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .cart table td .product-name:hover {
+            text-decoration: underline;
+        }
+
+        .cart table td .quantity {
+            display: flex;
+            align-items: center;
+        }
+
+        .cart table td .quantity input {
+            width: 40px;
+            text-align: center;
+            margin: 0 5px;
+        }
+
+        .cart table td .quantity button {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .cart table td .quantity button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .cart .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .cart .actions button {
+            padding: 10px 20px;
+            border: 1px solid #007bff;
+            background-color: #fff;
+            color: #007bff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cart .actions button:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .summary .total {
+            margin-bottom: 20px;
+        }
+
+        .summary .total p {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .summary .total p span {
+            font-weight: bold;
+        }
+
+        .summary .checkout {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .summary .checkout:hover {
+            background-color: #cc0000;
+        }
+
+        .summary .discount {
+            margin-top: 20px;
+        }
+
+        .summary .discount input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .summary .discount button {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .summary .discount button:hover {
+            background-color: #cc0000;
+        }
+
+        #hoadon td{
+            padding: 15px;
+        }
+
+        #hoadon caption {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        #thanhtoan {
+            display: none;
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container_">
+        <div class="cart">
+            <h2>
+                SẢN PHẨM
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>
+                            GIÁ
+                        </th>
+                        <th>
+                            SỐ LƯỢNG
+                        </th>
+                        <th>
+                            TỔNG CỘNG
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < lst.Count; i++)
+                    {
+                        <tr>
+                            <td>
+                                <a href=@Url.Action("XoaGioHang", "GioHang", new { MTID = lst[i].iMaMT })><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                            <td>
+                                <img alt="Loi tai anh" height="100" src="@Url.Content(lst[i].sHinhAnh)" width="100" />
+                            </td>
+                            <td>
+                                <a class="product-name" href="#">
+                                    @lst[i].sTenMT
+                                </a>
+                            </td>
+                            <td>
+                                @lst[i].dDonGia
+                            </td>
+                            <td class="quantity">
+                                <input type="number" id="soluong" min="1" value="@lst[i].iSoLuong" readonly style="width: 40%;" />
+                                @*<button id="cong" onclick="tang()">
+                                    +
+                                </button>
+                                <button id="tru" onclick="giam()">
+                                    -
+                                </button>*@
+                                <a href="@Url.Action("CongSP","GioHang", new {id = lst[i].iMaMT })">+</a> |
+                                <a href="@Url.Action("TruSP","GioHang", new {id = lst[i].iMaMT })">-</a>
+                            </td>
+                            <td>
+                                @lst[i].ThanhTien
+                            </td>
+                            <td>
+                                @if (lst[i].bXacNhan == true)
+                                {
+                                    <a href="@Url.Action("ChonSanPham", "GioHang", new {id = lst[i].iMaMT })"><input type="checkbox" checked onclick="location.href=this.parentNode.href" /></a>
+                                }
+                                else
+                                {
+                                    <a href="@Url.Action("ChonSanPham", "GioHang", new {id = lst[i].iMaMT })"><input type="checkbox" onclick="location.href=this.parentNode.href" /></a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="actions">
+                @Html.ActionLink("← Tiếp tục mua sắm", "Index", "MayTinh")
+                @*@Html.ActionLink("Cập nhật giỏ hàng", "CapNhatGioHang", "GioHang")*@
+            </div>
+        </div>
+        @if (lst.Count(t => t.bXacNhan == true) > 0)
+        {
+            <div class="summary">
+                <table style="border-collapse: collapse;" id="hoadon">
+                    <thead>
+                        <tr><th colspan="3" style="font-size: 35px; font-weight: bold; text-align: center">Đơn Hàng</th></tr>
+                        <tr>
+                            <td>Sản Phẩm</td>
+                            <td>Số Lượng</td>
+                            <td>Đơn Giá</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < lst.Count; i++)
+                        {
+                            if (lst[i].bXacNhan == true)
+                            {
+                                <tr>
+                                    <td>@lst[i].sTenMT</td>
+                                    <td>@lst[i].iSoLuong</td>
+                                    <td>@lst[i].dDonGia</td>
+                                </tr>
+                            }
+
+                            @*if (i == lst.Count - 1)
+            {
+                <tr>
+                    <td>Phiếu Giảm Giá</td>
+                    <td>Giảm giá 1</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">Tổng Tiền: </td>
+                    @if (@ViewBag.TongThanhTien != null)
+                    {
+                        <td>@ViewBag.TongThanhTien</td>
+                    }
+                </tr>
+            }*@
+
+                        }
+                        <tr>
+                            <td colspan="3" style="text-align: right;">Tổng Tiền : @ViewBag.TongThanhTien</td>
+                        </tr>
+                        @using (Html.BeginForm("XacNhanDonHang", "GioHang"))
+                        {
+                            <tr>
+                                <th colspan="3">Chọn phương thức thanh toán</th>
+                            </tr>
+                            <tr>
+                                <td colspan="3">@Html.RadioButtonFor(m => m.PhuongThucThanhToan, 1) Thanh toán khi nhận hàng</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">@Html.RadioButtonFor(m => m.PhuongThucThanhToan, 2) Chuyển khoản</td>
+                            </tr>
+                            @*<tr>
+                                <td colspan="3">@Html.RadioButtonFor(m => m.PhuongThucThanhToan, 3) Thanh toán bằng ATM</td>
+                            </tr>*@
+                            <tr>
+                        <td colspan="3">
+                            Địa chỉ nhận hàng: @Html.TextBoxFor(m => m.DiaChi, new { @class = "form-control", required = "required" })
+                        </td>
+                        </tr>
+
+                        <tr id="qr-info" style="display:none;">
+                            <td colspan="3" style="text-align: center;">
+                                <p><strong>Chuyển khoản đến:</strong></p>
+                                <p><strong>Tên TK:</strong> NGUYEN VAN A</p>
+                                <p><strong>Số TK:</strong> 0123456789</p>
+                                <p><strong>Ngân hàng:</strong> Vietcombank (VCB)</p>
+                                <img src="@Url.Content("~/Images/qrcode.jpg")" width="200" alt="QR Code" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" style="text-align: center;">
+                                <button type="submit" class="checkout">Xác nhận đặt hàng</button>
+                            </td>
+                        </tr>
+
+                        }
+                    </tbody>
+                </table>                
+            </div>
+        }
+    </div>
+   
+    <script>
+        const soluong = document.getElementById("soluong");
+        const cong = document.getElementById("cong");
+        const tru = document.getElementById("tru");
+
+        function tang() {
+            soluong.value = Number(soluong.value) + 1;
+        }
+
+        function giam() {
+            if (Number(soluong.value) > 1) {
+                soluong.value = Number(soluong.value) - 1;
+            }
+        }
+
+        function hienthi() {
+            const thanhtoan = document.getElementById("thanhtoan");
+
+            thanhtoan.style.display = "block";
+        }
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const radios = document.querySelectorAll("input[name='PhuongThucThanhToan']");
+            const qrSection = document.getElementById("qr-info");
+
+            radios.forEach(radio => {
+
+                radio.addEventListener("change", function () {
+                    if (this.value === "2") {
+                        qrSection.style.display = "table-row";
+                    } else {
+                        qrSection.style.display = "none";
+                    }
+                });
+
+            if (radio.checked && radio.value === "2") {
+                qrSection.style.display = "table-row";
+            }
+        });
+        });
+    </script>
+
+
+</body>
+</html>
+

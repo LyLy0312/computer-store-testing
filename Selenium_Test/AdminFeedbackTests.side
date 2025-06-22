@@ -1,0 +1,73 @@
+{
+  "id": "6dc10167-a07f-405c-9511-511cee8ab49d",
+  "version": "2.0",
+  "name": "AdminFeedbackTests",
+  "url": "http://localhost:54551",
+  "tests": [{
+    "id": "fb778a72-7950-442e-a7e1-4dd87376777c",
+    "name": "FeedbackTest",
+    "commands": [{
+      "id": "464fa2f6-9ab6-4e16-88c9-3a284df3e139",
+      "comment": "",
+      "command": "open",
+      "target": "/MayTinh/test",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "725e924a-be94-4769-b457-57daf8a93500",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c9cac07-a5b9-4dc5-8ce8-2d1992b69bec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-between > button",
+      "targets": [
+        ["css=.justify-content-between > button", "css:finder"],
+        ["xpath=//button[@onclick='openMenu()']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'☰ Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "342d2bba-fba5-47ad-b5ba-26b743734f59",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Phản hồi từ khách hàng",
+      "targets": [
+        ["linkText=Phản hồi từ khách hàng", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Phản hồi từ khách hàng')]", "xpath:link"],
+        ["xpath=//div[@id='menuModal']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/MayTinh/DSPhanhoi')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Phản hồi từ khách hàng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50647156-4daa-4b04-80e6-60e0dbe005ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'Đây là phản hồi test tự động từ Selenium.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "38442a71-7cbe-4f46-b2cf-e55b6fc2bc11",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fb778a72-7950-442e-a7e1-4dd87376777c"]
+  }],
+  "urls": ["http://localhost:54551/"],
+  "plugins": []
+}

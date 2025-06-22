@@ -1,0 +1,45 @@
+﻿@model IEnumerable<dynamic>
+@{
+    ViewBag.Title = "Thống kê doanh thu";
+    Layout = "~/Views/Shared/_Layout_.cshtml";
+}
+
+<h2>Thống kê doanh thu</h2>
+@using (Html.BeginForm("TKDoanhThu", "MayTinh", FormMethod.Get))
+{
+    <div>
+        <label>Từ ngày:</label>
+        <input type="date" name="tuNgay" value="@ViewBag.TuNgay" />
+
+        <label>Đến ngày:</label>
+        <input type="date" name="denNgay" value="@ViewBag.DenNgay" />
+
+        <button type="submit">Thống kê</button>
+    </div>
+}
+
+@if (Model != null && Model.Any())
+{
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Tổng doanh thu (VNĐ)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Ngay.ToString("dd/MM/yyyy")</td>
+                    <td>@String.Format("{0:N0}", item.TongDoanhThu)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Không có dữ liệu trong khoảng thời gian này.</p>
+}
+<a href="@Url.Action("test", "MayTinh")" class="btn btn-primary">Quay lại</a>

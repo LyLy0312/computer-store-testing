@@ -1,0 +1,193 @@
+{
+  "id": "638814f8-0348-4664-b8a0-be78d1574911",
+  "version": "2.0",
+  "name": "AdminOrderTests",
+  "url": "http://localhost:54551",
+  "tests": [{
+    "id": "b679a2dc-2446-4fc7-b576-32a237777642",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "071cb9ad-0b04-49df-835f-905fac0c6f99",
+    "name": "OrderTests",
+    "commands": [{
+      "id": "f796085c-7860-486d-b5ff-36b55bbb5497",
+      "comment": "",
+      "command": "open",
+      "target": "/MayTinh/test",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5a4fbe4-1477-4bc4-b221-5869aecfcb44",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a20c4ba-4d31-40d0-8950-30790f829edc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-between > button",
+      "targets": [
+        ["css=.justify-content-between > button", "css:finder"],
+        ["xpath=//button[@onclick='openMenu()']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'☰ Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44b1de87-f7c1-47f3-a539-40985fe20f73",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Danh sách đơn hàng",
+      "targets": [
+        ["linkText=Danh sách đơn hàng", "linkText"],
+        ["css=.dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Danh sách đơn hàng')]", "xpath:link"],
+        ["xpath=//div[@id='menuModal']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/MayTinh/DSDonHang')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Danh sách đơn hàng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f08ff2bd-db6b-4d00-ba3c-b9ac3a56e767",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Xem",
+      "targets": [
+        ["linkText=Xem", "linkText"],
+        ["css=tr:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Xem')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/MayTinh/DSDonHangDetails/1')]", "xpath:href"],
+        ["xpath=//td[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Xem')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64f57162-1a1c-4d77-b7d6-82224336e71b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Quay lại",
+      "targets": [
+        ["linkText=Quay lại", "linkText"],
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Quay lại')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/MayTinh/test')]", "xpath:href"],
+        ["xpath=//body/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Quay lại')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83f42d48-aeab-40c6-8724-b80c427f1447",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-content-between > button",
+      "targets": [
+        ["css=.justify-content-between > button", "css:finder"],
+        ["xpath=//button[@onclick='openMenu()']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'☰ Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d0a2323-04c5-4799-9df6-b2b7ccefeac2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Danh sách đơn hàng",
+      "targets": [
+        ["linkText=Danh sách đơn hàng", "linkText"],
+        ["css=.dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Danh sách đơn hàng')]", "xpath:link"],
+        ["xpath=//div[@id='menuModal']/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/MayTinh/DSDonHang')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Danh sách đơn hàng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e539cbd7-d8ce-42c6-b36f-5cbd3aaa05bd",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c025403-92d0-4de8-b228-784d9b9d68b3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hoàn thành",
+      "targets": [
+        ["linkText=Hoàn thành", "linkText"],
+        ["css=tr:nth-child(7) a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Hoàn thành')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"return confirm('Bạn có chắc muốn chuyển trạng thái sang Hoàn thành không?');\"]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/MayTinh/CapNhatTrangThai?madh=7&trangthai=Ho%C3%A0n%20th%C3%A0nh')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Hoàn thành')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "372bd635-93b2-4d4d-bd3e-fb8f654d7f1b",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Bạn có chắc muốn chuyển trạng thái sang Hoàn thành không?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc219f59-4c62-4778-8cc5-9e80bcb09c9a",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23668095-0855-4326-848f-4d45834ad292",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59ebcc9f-62ad-454f-8a57-f3bae0e555f0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Huỷ",
+      "targets": [
+        ["linkText=Huỷ", "linkText"],
+        ["css=tr:nth-child(8) a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Huỷ')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"return confirm('Bạn có chắc muốn huỷ đơn hàng này không?');\"]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/MayTinh/CapNhatTrangThai?madh=8&trangthai=B%E1%BB%8B%20hu%E1%BB%B7')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Huỷ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63f98f90-7a1b-4476-b10b-33f0b086f6fe",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Bạn có chắc muốn huỷ đơn hàng này không?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d9ba8e2-6c79-4fd5-8c92-731d17ccd19c",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ab62041d-ec1d-4116-b701-b568556c312b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b679a2dc-2446-4fc7-b576-32a237777642"]
+  }],
+  "urls": ["http://localhost:54551/"],
+  "plugins": []
+}

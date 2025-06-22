@@ -1,0 +1,38 @@
+﻿@model QLWEB.Models.DonHang
+@{
+    ViewBag.Title = "DSDonHangDetails";
+    Layout = "~/Views/Shared/_Layout_.cshtml";
+}
+
+<h2>Chi Tiết Đơn Hàng</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>DonHangID</th>
+        <td>@Model.DonHangID</td>
+    </tr>
+    <tr>
+        <th>KhachHangID</th>
+        <td>@Model.KhachHangID</td>
+    </tr>
+    <tr>
+        <th>Ngày đặt hàng</th>
+        <td>@Model.NgayDatHang</td>
+    </tr>
+    <tr>
+        <th>Tổng tiền</th>
+        <td>@Model.TongTien</td>
+    </tr>
+    <tr>
+        <th>Trạng thái</th>
+        <td>@Model.TrangThaiDonHang</td>
+    </tr>
+    <tr>
+        <th>Phương thức thanh toán</th>
+        <td>@Model.PhuongThucThanhToan</td>
+    </tr>
+    <tr>
+        <th>Địa chỉ giao hàng</th>
+        <td>@Model.DiaChiGiaoHang</td>
+    </tr>
+</table>
+<a href="@Url.Action("test", "MayTinh")" class="btn btn-primary">Quay lại</a>

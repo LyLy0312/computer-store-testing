@@ -1,0 +1,176 @@
+﻿@{
+    ViewBag.Title = "Đăng nhập";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            background-color: #5a505e;
+        }
+
+        .box {
+            padding-top: 25px;
+            margin: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            height: 70%;
+            border: 1px black solid;
+            background-color: #a8eedd;
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        .box_mot {
+            width: auto;
+            margin: 20px;
+            text-align: center;
+        }
+
+        button {
+            background-color: deepskyblue;
+            border-radius: 5px;
+        }
+
+            button:hover {
+                background-color: dodgerblue;
+            }
+
+        label {
+            text-align: left;
+        }
+
+        .error-message {
+            color: red;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: 800;
+        }
+
+        .social-login-btn {
+            margin: 10px 0;
+            padding: 10px;
+            width: 60%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .facebook-btn {
+            background-color: #3b5998;
+            color: white;
+        }
+
+        .google-btn {
+            background-color: #db4437;
+            color: white;
+        }
+
+        .x-btn {
+            background-color: #1da1f2;
+            color: white;
+        }
+        .remember-me {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <br /><br />
+        <div class="box">
+            <h2>Đăng nhập</h2>
+            @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+            {
+                <div class="error-message">@ViewBag.ErrorMessage</div>
+            }
+
+            @if (!string.IsNullOrEmpty(ViewBag.ThongBao))
+            {
+                <div class="error-message">@ViewBag.ThongBao</div>
+            }
+
+            @using (Html.BeginForm())
+            {
+                <div class="box_mot">
+                    <label for="email">Email</label> <br />
+                    <input type="text" name="email" id="email" style="width: 60%;" />
+                </div>
+
+                <div class="box_mot">
+                    <label for="Password">Mật khẩu</label> <br />
+                    <input type="password" name="password" style="width: 60%;" />
+                </div>
+                <div class="box_mot">
+                    <input type="checkbox" id="captchaCheckbox" onclick="generateCaptcha()" />
+                    <label for="captchaCheckbox">Tôi không phải là người máy</label>
+                </div>
+
+                <div id="captchaBox" class="box_mot" style="display:none;">
+                    <label>Mã xác nhận: <span id="captchaCode" style="font-weight:bold; font-size: 20px;"></span></label><br />
+                    <input type="text" name="captchaInput" placeholder="Nhập mã xác nhận..." style="width: 60%;" />
+                    <input type="hidden" id="captchaValue" name="captchaValue" />
+                </div>
+
+                <div class="box_mot_">
+                    <button type="submit" style="width: 55%; height: 40%; font-weight: 600;">Đăng Nhập</button>
+                </div>
+                <div class="box_mot remember-me">
+                    <input type="checkbox" id="rememberMe" name="rememberMe" />
+                    <label for="rememberMe">Lưu đăng nhập</label>
+                </div>
+
+                <div class="box_mot" style="margin-left: 190px;">
+                    @Html.ActionLink("Quên mật khẩu", "Forgot", "MayTinh")
+                </div>
+            }
+
+            <!-- Các nút đăng nhập mạng xã hội -->
+            <div class="box_mot">
+                <button class="social-login-btn facebook-btn" onclick="window.location.href='#'">
+                    Đăng nhập với Facebook
+                </button>
+            </div>
+
+            <div class="box_mot">
+                <button class="social-login-btn google-btn" onclick="window.location.href='#'">
+                    Đăng nhập với Gmail
+                </button>
+            </div>
+
+            <div class="box_mot">
+                <button class="social-login-btn x-btn" onclick="window.location.href='#'">
+                    Đăng nhập với X
+                </button>
+            </div>
+        </div>
+    </center>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function generateCaptcha() {
+            const code = Math.floor(100000 + Math.random() * 900000);
+            document.getElementById("captchaBox").style.display = "block";
+            document.getElementById("captchaValue").value = code;
+            document.getElementById("captchaCode").innerText = code;
+        }
+    </script>
+
+</body>
+</html>

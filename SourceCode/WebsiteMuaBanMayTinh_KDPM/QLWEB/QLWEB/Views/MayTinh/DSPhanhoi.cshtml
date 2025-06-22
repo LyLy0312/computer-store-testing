@@ -1,0 +1,27 @@
+﻿@model IEnumerable<QLWEB.Models.LIENHE>
+@{
+    ViewBag.Title = "DSPhanhoi";
+    Layout = "~/Views/Shared/_Layout_.cshtml";
+}
+
+<h2>Danh Sách Các Phản Hồi Từ Khách Hàng</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên khách hàng</th>
+            <th>Nội dung</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var lienHe in Model)
+        {
+            <tr>
+                <td>@lienHe.IDLienHe</td>
+                <td>@lienHe.KhachHang.TenKhachHang</td>
+                <td>@lienHe.NoiDung</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="@Url.Action("test", "MayTinh")" class="btn btn-primary">Quay lại</a>

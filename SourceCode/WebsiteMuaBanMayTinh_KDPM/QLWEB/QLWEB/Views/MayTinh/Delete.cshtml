@@ -1,0 +1,16 @@
+﻿@model QLWEB.Models.MT
+
+@{
+    ViewBag.Title = "Xóa sản phẩm";
+}
+
+<center>
+    <h2>Xóa sản phẩm</h2>
+    <p>Bạn có chắc muốn xóa sản phẩm: <strong>@Model.TenSP</strong>?</p>
+
+    @using (Html.BeginForm("XacNhanDelete", "MayTinh", new { id = Model.MTID }, FormMethod.Post))
+    {
+        <input type="submit" value="Xóa" class="btn btn-danger" />
+        <a href="@Url.Action("test", "MayTinh")" class="btn btn-secondary">Quay lại</a>
+    }
+</center>

@@ -1,0 +1,193 @@
+﻿@using QLWEB.Models
+@model KhachHangViewModel
+@{
+    ViewBag.Title = "Thông Tin Tài Khoản";
+    Layout = "~/Views/Shared/_Layout_.cshtml";
+}
+<html>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+
+        .container {
+            display: flex;
+            padding: 30px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #343a40;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 30px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+            .profile img {
+                border-radius: 50%;
+                margin-bottom: 10px;
+                border: 3px solid white;
+            }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+            .menu li {
+                margin: 15px 0;
+            }
+
+            .menu a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+
+                .menu a:hover {
+                    color: #ffc107;
+                }
+
+        .content {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        #password-fields {
+            display: none;
+            animation: slideDown 0.5s ease-in-out;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #007bff, #00bfff);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+            .btn-primary:hover {
+                background: linear-gradient(90deg, #0056b3, #0099cc);
+            }
+
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @@keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: scaleY(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('#change-password').change(function () {
+                $('#password-fields').slideToggle(300);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="https://chontruong.org/wp-content/uploads/2024/09/anh-avatar-vo-tri-1.jpg" width="80" height="80" />
+                <h4>@Model.TenKhachHang</h4>
+                <p>@Model.SoDienThoai</p>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="@Url.Action("DanhSachDonHang", "KhachHang")"><i class="fas fa-list"></i> Quản lý đơn hàng</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Login", "MayTinh")"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h3 class="mb-4">Thông Tin Tài Khoản</h3>
+
+            @if (ViewBag.Success != null)
+            {
+                <div class="alert alert-success">@ViewBag.Success</div>
+            }
+
+            <form method="post" action="@Url.Action("ThongTin", "KhachHang")">
+                <div class="form-group">
+                    <label>Họ và tên:</label>
+                    <input type="text" name="TenKhachHang" value="@Model.TenKhachHang" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại:</label>
+                    <input type="text" name="SoDienThoai" value="@Model.SoDienThoai" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" name="Email" value="@Model.Email" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Địa chỉ:</label>
+                    <input type="text" name="DiaChi" value="@Model.DiaChi" class="form-control" />
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" id="change-password" name="ChangePassword" class="form-check-input" />
+                    <label for="change-password" class="form-check-label">Thay đổi mật khẩu</label>
+                </div>
+
+                <div id="password-fields">
+                    <div class="form-group">
+                        <label>Mật khẩu cũ:</label>
+                        <input type="password" name="OldPassword" class="form-control" placeholder="Nhập mật khẩu cũ" />
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu mới:</label>
+                        <input type="password" name="NewPassword" class="form-control" placeholder="Nhập mật khẩu mới" />
+                    </div>
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary">💾 Lưu thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

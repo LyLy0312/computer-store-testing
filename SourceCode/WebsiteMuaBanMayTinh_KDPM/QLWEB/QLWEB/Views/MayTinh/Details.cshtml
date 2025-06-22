@@ -1,0 +1,374 @@
+﻿@model QLWEB.Models.MT
+
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+}
+<style>
+    /* Toàn bộ trang */
+    body {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        font-family: Arial, sans-serif;
+    }
+
+    /* Tiêu đề sản phẩm */
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2c3e50;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: opacity 0.3s ease;
+    }
+
+        h2:hover {
+            opacity: 0.7;
+        }
+
+    /* Bảng thông tin sản phẩm */
+    .tb_chitiet_sp {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+        .tb_chitiet_sp th,
+        .tb_chitiet_sp td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .tb_chitiet_sp th {
+            background: #007bff;
+            color: white;
+            text-transform: uppercase;
+        }
+
+    /* Ảnh sản phẩm */
+    .product-container img {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+        .product-container img:hover {
+            transform: scale(1.05);
+        }
+
+    /* Nút bấm */
+    .btn_ {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        background: #28a745;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+        .btn_:hover {
+            background: #218838;
+            transform: scale(1.1);
+        }
+
+    /* Danh sách sản phẩm gợi ý */
+    .recommended-section {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+        .recommended-section h3 {
+            font-size: 22px;
+            color: #007bff;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+    .recommended-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .recommended-item {
+        width: 200px;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .recommended-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .recommended-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .recommended-item h5 {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .recommended-item p {
+            font-size: 0.95em;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .review-section {
+            margin-top: 40px;
+        }
+
+        .review-item {
+            margin-bottom: 20px;
+        }
+        h4 {
+            margin-top: 30px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+        }
+</style>
+
+@*<style>
+    /* CSS chi tiết sản phẩm đã có... */
+    .recommended-section {
+        margin-top: 40px;
+    }
+
+        .recommended-section h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+    .recommended-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .recommended-item {
+        width: calc(20% - 20px); /* Hiển thị 5 sản phẩm trên 1 dòng */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .recommended-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .recommended-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .recommended-item h5 {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .recommended-item p {
+            font-size: 0.95em;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+</style>*@
+
+<div class="container product-container">
+    <div class="row product-detail">
+        <div class="col-md-6">
+            <h2 style="text-align: center">@Model.TenSP</h2>
+            <img src="~/Images/@Url.Content(Model.DuongDan)" alt="@Model.TenSP" />
+            <div style="text-align: center;">
+                @Html.ActionLink("Quay lại", "Index", "MayTinh", new { @class = "btn_" })
+                @if (Session["KhachHangID"] != null)
+                {
+                    @Html.ActionLink("Mua", "ThemGioHang", "GioHang", new { MTID = Model.MTID, returnUrl = Url.Action("Index", "MayTinh") }, new { @class = "btn_" })
+                }
+                else
+                {
+                    @Html.ActionLink("Mua", "Login", "MayTinh", null, new { @class = "btn_" })
+                }
+            </div>
+        </div>
+
+        <div class="col-md-6 product-info">
+            <table class="tb_chitiet_sp">
+                <tr>
+                    <th colspan="2" style="text-align: center;">CHI TIẾT SẢN PHẨM</th>
+                </tr>
+                <tr>
+                    <th>Danh Mục</th>
+                    <td>@Model.DanhMuc.TenDanhMuc</td>
+                </tr>
+                <tr>
+                    <th>Mô Tả</th>
+                    <td>@Model.MoTa</td>
+                </tr>
+                <tr>
+                    <th>Giá</th>
+                    <td>@Model.Gia</td>
+                </tr>
+                <tr>
+                    <th>RAM</th>
+                    <td>@Model.RAM</td>
+                </tr>
+                <tr>
+                    <th>Lưu Trữ</th>
+                    <td>@Model.LuuTru</td>
+                </tr>
+                <tr>
+                    <th>Kích Thước Màn Hình</th>
+                    <td>@Model.KichThuocManHinh</td>
+                </tr>
+                <tr>
+                    <th>Màu Sắc</th>
+                    <td>@Model.MauSac</td>
+                </tr>
+                <tr>
+                    <th>Dung Lượng Pin</th>
+                    <td>@Model.DungLuongPin</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    @if (ViewBag.DanhGias != null && ViewBag.DanhGias.Count > 0)
+    {
+        <div class="review-section">
+            <h3 style="color:#2c3e50; text-align:center; margin-top:30px;">Đánh Giá Sản Phẩm</h3>
+            @foreach (var danhGia in ViewBag.DanhGias)
+            {
+                <div class="review-item" style="background:#fff; margin:10px auto; padding:15px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); max-width:700px;">
+                    <p><strong>@danhGia.KhachHang.TenKhachHang</strong> - <span style="color:#999;">@danhGia.NgayDanhGia.ToString("dd/MM/yyyy")</span></p>
+                    <p>
+                        Đánh giá:
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            if (i <= danhGia.DiemDanhGia)
+                            {
+                                <span style="color:gold;">★</span>
+                            }
+                            else
+                            {
+                                <span style="color:#ccc;">★</span>
+                            }
+                        }
+                    </p>
+                    <p style="margin-top:10px;">@danhGia.NoiDungDanhGia</p>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p style="text-align:center; margin-top:20px; font-style:italic;">Chưa có đánh giá nào cho sản phẩm này.</p>
+    }
+    @if (Session["KhachHangID"] != null)
+    {
+        <h4>Viết đánh giá của bạn:</h4>
+        using (Html.BeginForm("GuiDanhGia", "MayTinh", FormMethod.Post))
+        {
+            @Html.Hidden("MTID", Model.MTID)
+
+            <div class="form-group">
+                <label for="DiemDanhGia">Chọn số sao (1-5):</label>
+                <select name="DiemDanhGia" class="form-control" required>
+                    <option value="">--Chọn sao--</option>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="NoiDungDanhGia">Nội dung đánh giá:</label>
+                <textarea name="NoiDungDanhGia" class="form-control" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">Gửi đánh giá</button>
+        }
+    }
+    else
+    {
+        <p><a href="@Url.Action("Login", "MayTinh")">Đăng nhập</a> để viết đánh giá.</p>
+    }
+
+@if (ViewBag.SuggestedProducts != null && ((List<QLWEB.Models.MT>)ViewBag.SuggestedProducts).Count > 0)
+{
+    <h3>ĐỀ XUẤT🗯</h3>
+    <div class="row">
+        @foreach (var sp in ViewBag.SuggestedProducts as List<QLWEB.Models.MT>)
+        {
+            <div class="col-md-3">
+                <div class="card" style="border: 1px solid #ddd; border-radius: 5px; padding: 10px; margin-bottom: 20px;">
+                    <img src="~/Images/@sp.DuongDan" class="card-img-top" alt="@sp.TenSP" style="max-width: 100%; height: 150px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@sp.TenSP</h5>
+                        <p class="card-text"><strong>Giá:</strong> @String.Format("{0:N0} VND", sp.Gia)</p>
+                        @Html.ActionLink("Xem chi tiết", "Details", "MayTinh", new { id = sp.MTID }, new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+    @*<div class="recommended-section">
+        <h3>Sản phẩm gợi ý</h3>
+        <div class="recommended-list">
+            @if (ViewBag.RecommendedProducts != null)
+            {
+                foreach (var item in (List<QLWEB.Models.MT>)ViewBag.RecommendedProducts)
+                {
+                    <div class="recommended-item">
+                        <a href="@Url.Action("Details", "MayTinh", new { id = item.MTID })">
+                            <img src="~/Images/@Url.Content(item.DuongDan)" alt="@item.TenSP" />
+                            <h5>@item.TenSP</h5>
+                            <p>@String.Format("{0:C0}", item.Gia)</p>
+                        </a>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>Không có sản phẩm gợi ý.</p>
+            }
+        </div>
+    </div>*@
+</div>

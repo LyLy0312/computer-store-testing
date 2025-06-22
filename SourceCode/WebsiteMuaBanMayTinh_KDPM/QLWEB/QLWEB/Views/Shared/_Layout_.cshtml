@@ -1,0 +1,442 @@
+﻿@{
+    var ID = Session["KhachHangID"];
+    var Name = Session["TenKhachHang"];
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="@Url.Content("~/Images/particle/favicon.ico")">
+    <title> LapWorld💻 </title>
+    <link rel="stylesheet" href="@Url.Content("~/Content/Css/bootstrap.min.css")">
+    <link href="@Url.Content("~/Content/Css/font/bootstrap-icons.css")" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <style>
+        html {
+            background-color: whitesmoke;
+        }
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+            #backToTop:hover {
+                background-color: #0056b3;
+            }
+        /* Hiệu ứng cho navbar */
+        .navbar {
+            background: linear-gradient(90deg, #f3a735, #ffcc33);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background 0.5s ease;
+        }
+
+            .navbar:hover {
+                background: linear-gradient(90deg, #ffcc33, #f3a735);
+            }
+
+        .navbar-brand {
+            font-family: cursive;
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff !important;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .nav-link {
+            color: #fff !important;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+            .nav-link:hover {
+                color: #333 !important;
+            }
+
+        .nav-item img {
+            margin-right: 5px;
+            transition: transform 0.3s ease;
+        }
+
+            .nav-item img:hover {
+                transform: scale(1.2);
+            }
+        /* Cấu hình hiệu ứng particles cho background */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            top: 0;
+            left: 0;
+        }
+        /* Footer cải tiến */
+        footer {
+            background: #222;
+            color: #ccc;
+            padding: 40px 0;
+        }
+
+            footer h5 {
+                color: #fff;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            footer a {
+                color: #ccc;
+                transition: color 0.3s ease;
+            }
+
+                footer a:hover {
+                    color: #f3a735;
+                    text-decoration: none;
+                }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+            .social-icon:hover {
+                transform: scale(1.2);
+            }
+
+        .footer-bottom {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            font-size: 14px;
+            color: #999;
+        }
+        canvas {
+            z-index: -2;
+            position: fixed;
+        }
+        #chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+        /* Nút Chatbot */
+        #chatbot-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+            #chatbot-btn:hover {
+                transform: scale(1.1);
+                background-color: #0056b3;
+            }
+        /* Chatbox (hiện khi ấn nút) */
+        #chatbot-box {
+            display: none;
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            position: relative;
+            margin-bottom: 10px;
+            overflow: hidden;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Header của Chatbox */
+        #chatbot-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #chatbot-close {
+            cursor: pointer;
+            font-size: 20px;
+        }
+        /* Nội dung chat */
+        #chatbot-content {
+            padding: 10px;
+            height: calc(100% - 110px);
+            overflow-y: auto;
+        }
+        /* Input và nút gửi */
+        #chatbot-input {
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            display: flex;
+        }
+
+            #chatbot-input input {
+                flex: 1;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            #chatbot-input button {
+                margin-left: 10px;
+                padding: 8px 12px;
+                background-color: #28a745;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+                #chatbot-input button:hover {
+                    background-color: #218838;
+                }
+    </style>
+
+    <script>
+        //document.addEventListener("DOMContentLoaded", function () {
+            particlesJS.load('particles-js', '@Url.Content("~/Images/particles.json")', function () {
+                console.log('particles.json loaded...');
+            });
+        //});
+    </script>
+</head>
+
+<body style="background-color: white;">
+    
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">LapWorld💻</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "MayTinh")" class="nav-link">
+                                <i class="bi bi-house-fill"></i> Trang Chủ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("GioiThieu", "MayTinh")" class="nav-link">
+                                <i class="bi bi-info-circle-fill"></i> Giới Thiệu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("LienHe", "MayTinh")" class="nav-link">
+                                <i class="bi bi-telephone-fill"></i> Liên Hệ
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            @if (ID != null)
+                            {
+                                <a href="@Url.Action("GioHang", "GioHang")" class="nav-link" style="margin-left: 10px;">
+                                    <i class="bi bi-cart4 fs-3" style="color: red;">
+                                        @(@Session["soluongsanpham"] ?? 0)
+                                    </i>
+                                </a>
+                            }
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        @if (ID == null)
+                        {
+                            <li class="nav-item">
+                                @Html.ActionLink("Đăng nhập", "Login", "MayTinh", new { @class = "nav-link" })
+                            </li>
+                            <li class="nav-item">
+                                @Html.ActionLink("Đăng ký", "Register", "MayTinh", new { @class = "nav-link" })
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a href="@Url.Content("~/KhachHang/ThongTin")">
+                                    <img src="@Url.Content("~/Images/anhdangnhap.jpg")" alt="Profile" class="rounded-circle" width="40" height="40">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link">@Name</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="dangxuat" href="@Url.Action("Logout", "MayTinh")">Đăng xuất</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Nội dung trang chính -->
+    <div class="container mt-4">
+        <div id="particles-js"></div>
+        @RenderBody()
+
+        <div id="particles-js"></div>
+        <button id="backToTop" title="Lên đầu trang"><i class="bi bi-arrow-up"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Chúng tôi</h5>
+                    <p>Chúng tôi cung cấp những dịch vụ tốt nhất để đảm bảo sự hài lòng của khách hàng.</p>
+                    <div>
+                        <a href="https://www.facebook.com/">
+                            <img class="social-icon" src="@Url.Content("~/Images/facebook.jpg")" alt="Facebook" />
+                        </a>
+                        <a href="https://zalo.me/pc">
+                            <img class="social-icon" src="@Url.Content("~/Images/zalo.jpg")" alt="Zalo" />
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <img class="social-icon" src="@Url.Content("~/Images/youtobe.jpg")" alt="YouTube" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Sản phẩm</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="@Url.Action("Index", "MayTinh")">Trang Chủ</a></li>
+                        <li><a href="@Url.Action("GioiThieu", "MayTinh")">Giới Thiệu</a></li>
+                        <li><a href="@Url.Action("LienHe", "MayTinh")">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Chính sách & Hỗ trợ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Bài viết</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                        <li><a href="#">Chính sách bảo vệ thông tin</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Nhận cập nhật</h5>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Email address" aria-label="Email">
+                        <button class="btn btn-primary" type="submit">Đăng ký</button>
+                    </form>
+                    <p class="mt-2">Đường dây nóng: 0388285455</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            © 2024 <span style="font-family: cursive; font-weight: bold; color: #f3a735;">GROUP-LongLyLy</span> | Bảo lưu bản quyền
+        </div>
+    </footer>
+
+    <script src="@Url.Content("~/Scripts/bootstrap.bundle.min.js")"></script>
+    <!-- Chatbot Container -->
+    <div id="chatbot-container">
+        <!-- Chatbox (ẩn mặc định) -->
+        <div id="chatbot-box">
+            <div id="chatbot-header">
+                Chatbot
+                <span id="chatbot-close">&times;</span>
+            </div>
+            <div id="chatbot-content">
+                <p>Xin chào! Hãy đặt câu hỏi của bạn...</p>
+            </div>
+            <div id="chatbot-input">
+                <input type="text" id="chatbot-message" placeholder="Nhập câu hỏi..." />
+                <button id="chatbot-send">Gửi</button>
+            </div>
+        </div>
+        <!-- Nút Chatbot cố định -->
+        <button id="chatbot-btn">💬</button>
+    </div>
+    <button id="backToTop" title="Lên đầu trang"><i class="bi bi-arrow-up"></i></button>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+                $('#backToTop').fadeIn();
+            } else {
+                $('#backToTop').fadeOut();
+            }
+        });
+        $('#backToTop').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 800);
+            return false;
+        });
+    </script>
+
+    <script>
+        document.getElementById("chatbot-btn").addEventListener("click", function () {
+            var chatBox = document.getElementById("chatbot-box");
+            chatBox.style.display = (chatBox.style.display === "block") ? "none" : "block";
+        });
+        document.getElementById("chatbot-close").addEventListener("click", function () {
+            document.getElementById("chatbot-box").style.display = "none";
+        });
+
+        document.getElementById("chatbot-send").addEventListener("click", function () {
+            var messageInput = document.getElementById("chatbot-message");
+            var message = messageInput.value.trim();
+            if (message !== "") {
+                var chatContent = document.getElementById("chatbot-content");
+                var userMessage = document.createElement("p");
+                userMessage.style.textAlign = "right";
+                userMessage.style.color = "#007bff";
+                userMessage.textContent = "Bạn: " + message;
+                chatContent.appendChild(userMessage);
+                messageInput.value = "";
+                // Tạm thời trả lời tự động
+                setTimeout(function () {
+                    var botReply = document.createElement("p");
+                    botReply.style.textAlign = "left";
+                    botReply.style.color = "#e74c3c";
+                    botReply.textContent = "Chatbot: Chúng tôi đã nhận câu hỏi của bạn!";
+                    chatContent.appendChild(botReply);
+                    chatContent.scrollTop = chatContent.scrollHeight;
+                }, 500);
+            }
+        });
+    </script>
+
+</body>
+</html>

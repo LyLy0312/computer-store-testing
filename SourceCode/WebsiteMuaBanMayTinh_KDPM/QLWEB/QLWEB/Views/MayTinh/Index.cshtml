@@ -1,0 +1,704 @@
+﻿@using QLWEB.Models
+@*@model IEnumerable<QLWEB.Models.MT>*@
+@model List<QLWEB.Models.MT>
+
+@{
+    ViewBag.Title = "Danh sách sản phẩm";
+    List<MT> tam = ViewData["gioithieu"] as List<MT>;
+    var adBanners = ViewBag.AdBanners as IEnumerable<string> ?? new List<string> { "banner-do.png", "banner-9.png", "banner-5.png" };
+    var productAds = new List<string> { "banner-3.png", "banner-4.png", "banner-9.png", "banner-7.png" };
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    /* Back to Top Button */
+    /*#backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 100;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+        #backToTop:hover {
+            background-color: #0056b3;
+        }*/
+
+    /* Animated Heading */
+    @@keyframes colorChange {
+        0% {
+            color: #ff0000;
+        }
+
+        25% {
+            color: #00aa00;
+        }
+
+        50% {
+            color: #0000ff;
+        }
+
+        75% {
+            color: #ff00ff;
+        }
+
+        100% {
+            color: #ff0000;
+        }
+    }
+
+    .animated-heading {
+        animation: colorChange 5s infinite;
+        font-weight: bold;
+    }
+
+    .ad-banner-carousel {
+        width: 100%;
+        margin: 10px auto;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+        .ad-banner-carousel img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+            .ad-banner-carousel img:hover {
+                transform: scale(1.05);
+            }
+    /* Product Carousel */
+    .carousel-container {
+        width: 100%;
+        margin: 20px auto;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        height: 350px;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.45);
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+        .carousel-caption h5 {
+            font-weight: 300;
+            color: #fff;
+        }
+
+        .carousel-caption p {
+            color: #e0e0ff;
+            font-weight: 600;
+        }
+
+    .carousel-indicators button {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+    }
+    /* Filter Panel Styles */
+    .filter-panel {
+        background: #f8f9fa;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .filter-panel .form-select,
+    .filter-panel .form-control,
+    .filter-panel button {
+        transition: transform 0.3s ease;
+    }
+
+        .filter-panel .form-select:focus,
+        .filter-panel .form-control:focus {
+            transform: scale(1.02);
+        }
+    /* Product List Styles */
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-between;
+        margin: 30px 0;
+    }
+
+    .product-item {
+        width: calc(25% - 16px);
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .product-item img {
+            max-height: 200px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .product-item h4 {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .product-item p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .product-item .price {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #d9534f;
+        }
+
+    .product-actions a {
+        margin: 5px;
+        text-decoration: none;
+        color: #fff;
+        transition: background 0.3s ease;
+    }
+
+    .btn-outline-primary {
+        width: 150px;
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+
+    .btn-primary {
+        width: 150px;
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+        .btn-primary:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+    /* Advertisement block inserted between products */
+    .product-ad {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+        .product-ad img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+    /* Responsive Adjustments */
+    @@media (max-width: 992px) {
+        .product-item {
+            width: calc(50% - 16px);
+        }
+
+        .ad-banner-carousel,
+        .carousel-container {
+            width: 90%;
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .product-item {
+            width: 100%;
+        }
+
+        .ad-banner-carousel,
+        .carousel-container {
+            width: 100%;
+        }
+    }
+    /* Blog Section Styles */
+    .blog-section {
+        margin-top: 50px;
+        padding: 30px;
+        background: #f1f1f1;
+        border-radius: 8px;
+    }
+
+        .blog-section h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+    .blog-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .blog-item {
+        width: calc(33.33% - 20px);
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+    }
+
+        .blog-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .blog-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .blog-item .blog-content {
+            padding: 15px;
+        }
+
+        .blog-item .blog-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .blog-item .blog-link {
+            color: #28a745;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    @@media (max-width: 768px) {
+        .blog-item {
+            width: calc(50% - 20px);
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .blog-item {
+            width: 100%;
+        }
+    }
+    canvas {
+        z-index: -2;
+        position: fixed;
+    }
+</style>
+<script>
+        //document.addEventListener("DOMContentLoaded", function () {
+            particlesJS.load('particles-js', '@Url.Content("~/Images/particles.json")', function () {
+                console.log('particles.json loaded...');
+            });
+        //});
+</script>
+<div id="particles-js"></div>
+@if (TempData["ThongBao"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["ThongBao"]
+    </div>
+}
+
+<!-- Advertisement Banner Carousel -->
+<div class="ad-banner-carousel">
+    <div id="adCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        @*<div class="carousel-indicators">
+            <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: brown"></button>
+            <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: black"></button>
+            <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: aqua"></button>
+        </div>*@
+        <div class="carousel-inner">
+            @for (int i = 0; i < adBanners.Count(); i++)
+            {
+                var activeClass = i == 0 ? "active" : "";
+                <div class="carousel-item @activeClass">
+                    <img src="@Url.Content("~/Images/" + adBanners.ElementAt(i))" alt="Quảng cáo @i">
+                </div>
+            }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#adCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#adCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+ @*Product Carousel 
+<center>
+    <div class="carousel-container">
+        <div id="courseCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: brown"></button>
+                <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: black"></button>
+                <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: aqua"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="@Url.Content("~/Images/" + tam[0].DuongDan)" class="d-block w-100" alt="Sản Phẩm">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Sản Phẩm: @tam[0].TenSP</h5>
+                        <p>@tam[0].MoTa</p>
+                        <a href="@Url.Action("Details", "MayTinh", new { id = tam[0].MTID })" class="btn btn-primary">
+                            <i class="bi bi-info-circle"></i> Tìm hiểu thêm
+                        </a>
+                    </div>
+                </div>
+                @for (int i = 1; i < tam.Count; i++)
+                {
+                    <div class="carousel-item">
+                        <img src="@Url.Content("~/Images/" + tam[i].DuongDan)" class="d-block w-100" alt="Sản Phẩm">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sản Phẩm: @tam[i].TenSP</h5>
+                            <p>@tam[i].MoTa</p>
+                            <a href="@Url.Action("Details", "MayTinh", new { id = tam[i].MTID })" class="btn btn-primary">
+                                <i class="bi bi-info-circle"></i> Tìm hiểu thêm
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</center>*@
+<div class="container">
+    <!-- Animated Heading for Product List -->
+    <h2 class="mt-4 mb-3 animated-heading">Danh sách sản phẩm</h2>
+    <!-- Filter Panel with dynamic effect -->
+    <div class="filter-panel">
+        <form action="@Url.Action("Index", "MayTinh")" method="get" class="d-flex flex-wrap align-items-center">
+            <div class="me-3 mb-2">
+                <select name="DanhMucID" class="form-select">
+                    <option value="">Tất cả loại hàng</option>
+                    @foreach (var danhmuc in ViewBag.DanhMucs as IEnumerable<QLWEB.Models.DanhMuc>)
+                    {
+                        <option value="@danhmuc.DanhMucID" @(danhmuc.DanhMucID.ToString() == Request["DanhMucID"] ? "selected" : "")>
+                            @danhmuc.TenDanhMuc
+                        </option>
+                    }
+                </select>
+            </div>
+
+                <div class="me-3 mb-2 position-relative">
+                    <input type="search" id="txtSearch" name="txtSearch" class="form-control" placeholder="Tìm kiếm sản phẩm..." value="@Request["txtSearch"]">
+                    <div id="searchSuggestions" class="list-group position-absolute w-100" style="z-index: 1000; display: none;"></div>
+                </div>
+
+                <div class="mb-2">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-search"></i> Tìm
+                    </button>
+                </div>
+
+            @*<div class="me-3 mb-2">
+                <input name="txtSearch" class="form-control" type="search" placeholder="Tìm kiếm sản phẩm..." value="@Request["txtSearch"]" />
+            </div>
+
+            <div class="mb-2">
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-search"></i> Tìm
+                </button>
+            </div>*@
+        
+        </form>
+    </div>
+
+    <div class="product-list">
+        @{
+            int index = 0;
+        }
+        @foreach (var product in Model)
+        {
+            <div class="product-item">
+                <h4>@product.TenSP</h4>
+                <img src="@Url.Content("~/Images/" + product.DuongDan)" alt="@product.TenSP" />
+                <p>@product.MoTa</p>
+                <p class="price">@String.Format("{0:C0}", product.Gia)</p>
+                <div class="product-actions">
+                    <a href="@Url.Action("Details", "MayTinh", new { id = product.MTID })" class="btn btn-outline-primary">
+                        <i class="bi bi-eye"></i> Xem chi tiết
+                    </a>
+                    @if (Session["KhachHangID"] != null)
+                    {
+                        <a href="@Url.Action("ThemGioHang", "GioHang", new { MTID = product.MTID, returnUrl = Url.Action("Index", "MayTinh") })" class="btn btn-primary">
+                            <i class="bi bi-cart"></i> Mua
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Login", "MayTinh")" class="btn btn-primary">
+                            <i class="bi bi-cart"></i> Mua
+                        </a>
+                    }
+                </div>
+            </div>
+                    index++;
+                    if (index % 12 == 0)
+                    {
+                        var adIndex = ((index / 12) - 1) % productAds.Count;
+                        <div class="product-ad">
+                            <a href="https://example.com/promotion" target="_blank">
+                                <img src="@Url.Content("~/Images/" + productAds[adIndex])" alt="Quảng cáo sản phẩm" />
+                            </a>
+                        </div>
+                    }
+        }
+    </div>
+</div>
+
+<!-- Blog Công Nghệ Section -->
+<div class="blog-section container">
+    <h3>Blog Công Nghệ</h3>
+    <div class="blog-list">
+        <div class="blog-item">
+            <img src="@Url.Content("~/Images/blog1.jpg")" alt="TechCrunch" />
+            <div class="blog-content">
+                <div class="blog-title">TechCrunch</div>
+                <a href="https://techcrunch.com" target="_blank" class="blog-link">Xem thêm</a>
+            </div>
+        </div>
+        <div class="blog-item">
+            <img src="@Url.Content("~/Images/blog2.jpg")" alt="The Verge" />
+            <div class="blog-content">
+                <div class="blog-title">The Verge</div>
+                <a href="https://www.theverge.com" target="_blank" class="blog-link">Xem thêm</a>
+            </div>
+        </div>
+        <div class="blog-item">
+            <img src="@Url.Content("~/Images/blog1.jpg")" alt="Wired" />
+            <div class="blog-content">
+                <div class="blog-title">Wired</div>
+                <a href="https://www.wired.com" target="_blank" class="blog-link">Xem thêm</a>
+            </div>
+        </div>
+        <div class="blog-item">
+            <img src="@Url.Content("~/Images/blog2.jpg")" alt="Engadget" />
+            <div class="blog-content">
+                <div class="blog-title">Engadget</div>
+                <a href="https://www.engadget.com" target="_blank" class="blog-link">Xem thêm</a>
+            </div>
+        </div>
+        <div class="blog-item">
+            <img src="@Url.Content("~/Images/blog1.jpg")" alt="Gizmodo" />
+            <div class="blog-content">
+                <div class="blog-title">Gizmodo</div>
+                <a href="https://gizmodo.com" target="_blank" class="blog-link">Xem thêm</a>
+            </div>
+        </div>
+        <div class="blog-item">
+            <img src="@Url.Content("~/Images/blog2.jpg")" alt="CNET" />
+            <div class="blog-content">
+                <div class="blog-title">CNET</div>
+                <a href="https://www.cnet.com" target="_blank" class="blog-link">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+</div>
+@*<button id="backToTop" title="Lên đầu trang"><i class="bi bi-arrow-up"></i></button>
+
+<script>
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('#backToTop').fadeIn();
+        } else {
+            $('#backToTop').fadeOut();
+        }
+    });
+    $('#backToTop').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+    });
+</script>*@
+
+<style>
+    .falling-leaf {
+        width: 35px;
+        height: auto;
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        var leafImages = ['laphong.png', 'laphong.png', 'laphong.png'];
+
+        function createLeaf() {
+            var leafSrc = '@Url.Content("~/Images/")' + leafImages[Math.floor(Math.random() * leafImages.length)];
+            var $leaf = $('<img class="falling-leaf" src="' + leafSrc + '">');
+
+            // Đặt vị trí ban đầu ngẫu nhiên theo chiều ngang và độ trong suốt
+            var startLeft = Math.random() * $(window).width();
+            $leaf.css({
+                top: '-50px',
+                left: startLeft,
+                opacity: Math.random() * 0.5 + 0.5
+            });
+
+            $('body').append($leaf);
+            var duration = Math.random() * 5000 + 5000;
+            var endLeft = startLeft + (Math.random() * 100 - 50);
+
+            // Animate lá từ trên xuống dưới
+            $leaf.animate({
+                top: $(window).height() + 50,
+                left: endLeft
+            }, duration, 'linear', function () {
+                $(this).remove();
+            });
+        }
+        setInterval(createLeaf, 600);
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        const suggestionBox = $('#searchSuggestions');
+        const searchInput = $('#txtSearch');
+
+        function getHistory() {
+            return JSON.parse(localStorage.getItem('searchHistory') || '[]');
+        }
+
+        function saveHistory(term) {
+            let history = getHistory();
+            if (!history.includes(term)) {
+                history.unshift(term);
+                if (history.length > 5) history.pop();
+                localStorage.setItem('searchHistory', JSON.stringify(history));
+            }
+        }
+
+        function renderSuggestions(history, suggestions) {
+            const suggestionBox = $('#searchSuggestions');
+            suggestionBox.empty();
+
+            // Hiển thị lịch sử tìm kiếm
+            if (history.length > 0) {
+                suggestionBox.append('<div class="list-group-item fw-bold">Lịch sử tìm kiếm</div>');
+                history.forEach(term => {
+                    suggestionBox.append(`<a href="#" class="list-group-item list-group-item-action history-item">${term}</a>`);
+        });
+        }
+
+            // Hiển thị gợi ý sản phẩm
+            if (suggestions.length > 0) {
+                suggestionBox.append('<div class="list-group-item fw-bold">Gợi ý sản phẩm</div>');
+                suggestions.forEach(item => {
+                        suggestionBox.append(`<a href="/MayTinh/Details/${item.ID}" class="list-group-item list-group-item-action d-flex align-items-center">
+                                                    <img src="${item.Img}" style="width: 35px; height: 35px; object-fit: cover; margin-right: 10px;">
+                                                <span>${item.Name}</span>
+                                            </a>`);
+            });
+            }
+
+        suggestionBox.show();
+        }
+    $(document).on('click', '.history-item', function (e) {
+        e.preventDefault(); // Không chuyển trang
+        const selectedText = $(this).text();
+        $('#txtSearch').val(selectedText); // Gán vào ô input
+        $('#txtSearch').trigger('input'); // Gọi lại sự kiện tìm kiếm (nếu có)
+    });
+
+
+    searchInput.on('keyup focus', function () {
+        const term = $(this).val();
+        if (term.length === 0) {
+            renderSuggestions(getHistory(), []);
+            return;
+        }
+
+        $.getJSON('/MayTinh/GetSuggestions', { term: term }, function (data) {
+            renderSuggestions(getHistory(), data);
+        });
+    });
+
+    searchInput.on('keydown', function (e) {
+        if (e.key === 'Enter') {
+            const term = $(this).val();
+            saveHistory(term);
+            window.location.href = `/MayTinh/Search?searchTerm=${encodeURIComponent(term)}`;
+        }
+    });
+
+    // Ẩn khung gợi ý khi click ngoài
+    $(document).click(function (e) {
+        if (!$(e.target).closest('#txtSearch, #searchSuggestions').length) {
+            suggestionBox.hide();
+        }
+    });
+    });
+</script>
+
+

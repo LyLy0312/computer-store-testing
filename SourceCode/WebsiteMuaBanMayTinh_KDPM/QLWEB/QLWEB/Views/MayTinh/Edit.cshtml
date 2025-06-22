@@ -1,0 +1,89 @@
+﻿@model QLWEB.Models.MT
+
+@{
+    ViewBag.Title = "Chỉnh sửa sản phẩm";
+}
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<h2 class="text-center mt-4">Chỉnh sửa sản phẩm</h2>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data", @class = "container mt-5 col-md-6 bg-light p-4 rounded shadow" }))
+{
+    <div class="mb-3">
+        <label for="ID" class="form-label">ID sản phẩm</label>
+        @Html.TextBoxFor(m => m.MTID, new { @class = "form-control", placeholder = "Nhập ID sản phẩm", @readonly = "readonly" })
+    </div>
+
+    <div class="mb-3">
+        <label for="TenSP" class="form-label">Tên sản phẩm</label>
+        @Html.TextBoxFor(m => m.TenSP, new { @class = "form-control", placeholder = "Nhập tên sản phẩm" })
+    </div>
+
+    <div class="mb-3">
+        <label for="TH" class="form-label">Thương hiệu</label>
+        @Html.TextBoxFor(m => m.ThuongHieu, new { @class = "form-control", placeholder = "Nhập Thương hiệu" })
+    </div>
+
+    <div class="mb-3">
+        <label for="DanhMucID" class="form-label">Danh mục</label>
+        @Html.DropDownListFor(m => m.DanhMucID, (SelectList)ViewBag.Categories, "Chọn danh mục", new { @class = "form-select" })
+    </div>
+
+    <div class="mb-3">
+        <label for="MoTa" class="form-label">Mô tả</label>
+        @Html.TextAreaFor(m => m.MoTa, new { @class = "form-control", rows = "4", placeholder = "Nhập mô tả sản phẩm" })
+    </div>
+
+    <div class="mb-3">
+        <label for="Gia" class="form-label">Giá</label>
+        @Html.TextBoxFor(m => m.Gia, new { @class = "form-control", placeholder = "Nhập giá sản phẩm" })
+    </div>
+
+    <div class="mb-3">
+        <label for="SL" class="form-label">Số lượng</label>
+        @Html.TextBoxFor(m => m.SoLuongKho, new { @class = "form-control", placeholder = "Nhập Số lượng" })
+    </div>
+
+    <div class="mb-3">
+        <label for="Ram" class="form-label">Ram</label>
+        @Html.TextBoxFor(m => m.RAM, new { @class = "form-control", placeholder = "Nhập dung lượng RAM" })
+    </div>
+
+    <div class="mb-3">
+        <label for="ViXuLy" class="form-label">Vi Xử Lý</label>
+        @Html.TextBoxFor(m => m.ViXuLy, new { @class = "form-control", placeholder = "Nhập Vi Xử Lý" })
+    </div>
+
+    <div class="mb-3">
+        <label for="Luu" class="form-label">Lưu trữ</label>
+        @Html.TextBoxFor(m => m.LuuTru, new { @class = "form-control", placeholder = "Nhập dung lượng lưu trữ" })
+    </div>
+
+    <div class="mb-3">
+        <label for="Man" class="form-label">Kích thước màn hình</label>
+        @Html.TextBoxFor(m => m.KichThuocManHinh, new { @class = "form-control", placeholder = "Nhập kích thước màn hình" })
+    </div>
+
+    <div class="mb-3">
+        <label for="Mau" class="form-label">Màu sắc</label>
+        @Html.TextBoxFor(m => m.MauSac, new { @class = "form-control", placeholder = "Nhập màu sắc" })
+    </div>
+
+    <div class="mb-3">
+        <label for="pin" class="form-label">Dung lượng pin</label>
+        @Html.TextBoxFor(m => m.DungLuongPin, new { @class = "form-control", placeholder = "Nhập dung lượng pin" })
+    </div>
+
+    <div class="mb-3">
+        <label for="file" class="form-label">Chọn ảnh mới</label>
+        <input type="file" name="file" id="file" class="form-control" required />
+    </div>
+
+    <div class="text-center">
+        <input type="submit" value="Cập nhật" class="btn btn-primary w-100" />
+    </div>
+    <a href="@Url.Action("test", "MayTinh")" class="btn btn-primary">Quay lại</a>
+}

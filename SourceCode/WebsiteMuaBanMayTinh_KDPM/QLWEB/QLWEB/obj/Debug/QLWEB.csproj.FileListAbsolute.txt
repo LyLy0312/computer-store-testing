@@ -1,0 +1,445 @@
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\QLWEB.dll.config
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\QLWEB.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\QLWEB.pdb
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Providers.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\WebGrease.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+C:\Users\Admin\Desktop\MVC Đồ án web bán mt\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\QLWEB.dll.config
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\QLWEB.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\QLWEB.pdb
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\EntityFramework.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Http.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Providers.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Razor.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\WebGrease.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\EntityFramework.xml
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Http.xml
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.Razor.xml
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\obj\Debug\QLWEB.csproj.AssemblyReference.cache
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\obj\Debug\QLWEB.csproj.CoreCompileInputs.cache
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\obj\Debug\QLWEB.csproj.Up2Date
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+D:\LapTrinhWeb\MVC Web mt\MVC Đồ án web bán mt\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\obj\Debug\QLWEB.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\QLWEB.dll.config
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\QLWEB.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\QLWEB.pdb
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.Providers.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\WebGrease.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\QLWEB.dll.config
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\QLWEB.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\QLWEB.pdb
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.Providers.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\WebGrease.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\obj\Debug\QLWEB.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+C:\Users\Admin\Desktop\WebBanMayTinhMVC 1\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\QLWEB.dll.config
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\QLWEB.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\QLWEB.pdb
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Providers.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\WebGrease.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\QLWEB.dll.config
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\QLWEB.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\QLWEB.pdb
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Providers.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Razor.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\WebGrease.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Razor.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.csproj.AssemblyReference.cache
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.csproj.CoreCompileInputs.cache
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.csproj.Up2Date
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+D:\laptrinhweb\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\QLWEB.dll.config
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\QLWEB.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\QLWEB.pdb
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Providers.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Razor.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\WebGrease.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.Razor.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+C:\Users\Admin\Downloads\WebBanMayTinh\WebBanMayTinh\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\QLWEB.dll.config
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\QLWEB.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\QLWEB.pdb
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.Providers.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\WebGrease.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\obj\Debug\QLWEB.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+C:\Users\Admin\Desktop\WebBanMayTinh\Code\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\QLWEB.dll.config
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\QLWEB.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\QLWEB.pdb
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.Providers.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\WebGrease.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\obj\Debug\QLWEB.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh\3.Code\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\QLWEB.dll.config
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\QLWEB.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\QLWEB.pdb
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.Providers.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\WebGrease.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\3.Code\QLWEB\QLWEB\obj\Debug\QLWEB.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\QLWEB.dll.config
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\QLWEB.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\QLWEB.pdb
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.Providers.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\WebGrease.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\obj\Debug\QLWEB.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KPHDL\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\QLWEB.dll.config
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\QLWEB.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\QLWEB.pdb
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Providers.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\WebGrease.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\QLWEB.dll.config
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\QLWEB.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\QLWEB.pdb
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\Antlr3.Runtime.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\EntityFramework.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\EntityFramework.SqlServer.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\Microsoft.Web.Infrastructure.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\Newtonsoft.Json.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Net.Http.Formatting.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Http.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Http.WebHost.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Mvc.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Optimization.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Providers.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Razor.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\WebGrease.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\EntityFramework.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\EntityFramework.SqlServer.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\Newtonsoft.Json.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Net.Http.Formatting.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Http.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Http.WebHost.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Mvc.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.Razor.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.Deployment.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\bin\System.Web.WebPages.Razor.xml
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\obj\Debug\QLWEB.csproj.AssemblyReference.cache
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\obj\Debug\QLWEB.csproj.CoreCompileInputs.cache
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\obj\Debug\QLWEB.csproj.Up2Date
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\obj\Debug\QLWEB.dll
+D:\KDPM\WebsiteMuaBanMayTinh_KDPM\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\obj\Debug\QLWEB.pdb
+C:\Users\Admin\Desktop\WebsiteMuaBanMayTinh_KDPM\QLWEB\QLWEB\obj\Debug\QLWEB.csprojResolveAssemblyReference.cache

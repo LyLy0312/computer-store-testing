@@ -1,0 +1,177 @@
+{
+  "id": "ae7b1e41-f42d-42f5-98ef-6d00d233a6b9",
+  "version": "2.0",
+  "name": "CartTests",
+  "url": "http://localhost:54551",
+  "tests": [{
+    "id": "7e86c509-3200-4bcf-b5d2-5daaafefe6cc",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "b9042d9d-7e86-4c73-aaf4-dda1c23b181b",
+    "name": "AddProductAndCheckout",
+    "commands": [{
+      "id": "12d00bc9-b49f-4281-bdee-e08a5989030f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "899dbb5b-889d-46b4-99b6-982c6ca55d30",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e48cc8f-8caa-4ec3-8736-5dfa1fea5508",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,122.4000015258789)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef450a25-080c-4b84-b6f7-02d25124b435",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Mua",
+      "targets": [
+        ["linkText=Mua", "linkText"],
+        ["css=.product-item:nth-child(1) .btn-primary", "css:finder"],
+        ["xpath=//a[contains(@href, '/GioHang/ThemGioHang?MTID=1&returnUrl=%2F')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Mua')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc77dfd1-255a-442b-ba4b-8f7509bea2d2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mua",
+      "targets": [
+        ["linkText=Mua", "linkText"],
+        ["css=.product-item:nth-child(1) .btn-primary", "css:finder"],
+        ["xpath=//a[contains(@href, '/GioHang/ThemGioHang?MTID=1&returnUrl=%2F')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Mua')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "265ed128-4dc1-494e-824f-a4b091ac4a00",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bi-cart4",
+      "targets": [
+        ["css=.bi-cart4", "css:finder"],
+        ["xpath=//div[@id='navbarNav']/ul/li[4]/a/i", "xpath:idRelative"],
+        ["xpath=//li[4]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,' 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed3f8f4d-884a-4201-89a3-12d7dd9e0e5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > input",
+      "targets": [
+        ["css=a > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//a/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b86d8c99-52f1-418d-83f6-480ca4186ac5",
+      "comment": "",
+      "command": "click",
+      "target": "id=PhuongThucThanhToan",
+      "targets": [
+        ["id=PhuongThucThanhToan", "id"],
+        ["name=PhuongThucThanhToan", "name"],
+        ["css=tr:nth-child(5) #PhuongThucThanhToan", "css:finder"],
+        ["xpath=//input[@id='PhuongThucThanhToan']", "xpath:attributes"],
+        ["xpath=//table[@id='hoadon']/tbody/tr[4]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efe96754-03d6-4012-94ad-90d1522b60a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=DiaChi",
+      "targets": [
+        ["id=DiaChi", "id"],
+        ["name=DiaChi", "name"],
+        ["css=#DiaChi", "css:finder"],
+        ["xpath=//input[@id='DiaChi']", "xpath:attributes"],
+        ["xpath=//table[@id='hoadon']/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f94dcec-3ad0-435a-bc7b-5bdade9b7185",
+      "comment": "",
+      "command": "type",
+      "target": "id=DiaChi",
+      "targets": [
+        ["id=DiaChi", "id"],
+        ["name=DiaChi", "name"],
+        ["css=#DiaChi", "css:finder"],
+        ["xpath=//input[@id='DiaChi']", "xpath:attributes"],
+        ["xpath=//table[@id='hoadon']/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": "123 LTT"
+    }, {
+      "id": "bfc506d5-882b-4583-a96c-a019d142206e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkout",
+      "targets": [
+        ["css=.checkout", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//table[@id='hoadon']/tbody/tr[8]/td/button", "xpath:idRelative"],
+        ["xpath=//td/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Xác nhận đặt hàng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "072460a4-5210-4688-846d-e50189a6d70a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='pdf-content']/div[5]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Đặt mua')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "218832d7-14a6-49af-bd4a-c50e75898622",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tiếp tục mua sắm",
+      "targets": [
+        ["linkText=Tiếp tục mua sắm", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Tiếp tục mua sắm')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[7]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tiếp tục mua sắm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6a43e055-c443-488d-8532-2c7df4b8c2cd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7e86c509-3200-4bcf-b5d2-5daaafefe6cc"]
+  }],
+  "urls": ["http://localhost:54551/"],
+  "plugins": []
+}

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<QLWEB.Models.DonHang>
+
+@{
+    ViewBag.Title = "DSDonHang";
+    Layout = "~/Views/Shared/_Layout_.cshtml";
+}
+
+<h2>Danh Sách Các Đơn Hàng</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>DonHangID</th>
+            <th>KhachHangID</th>
+            <th>Ngày đặt hàng</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
+            <th>Phương thức thanh toán</th>
+            <th>Địa chỉ giao hàng</th>
+            <th>Xem Chi Tiết</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var donHang in Model)
+        {
+            <tr>
+                <td>@donHang.DonHangID</td>
+                <td>@donHang.KhachHangID</td>
+                <td>@donHang.NgayDatHang</td>
+                <td>@donHang.TongTien</td>
+                <td>@donHang.TrangThaiDonHang</td>
+                <td>@donHang.PhuongThucThanhToan</td>
+                <td>@donHang.DiaChiGiaoHang</td>
+                <td>
+                    @Html.ActionLink("Xem", "DSDonHangDetails", new { id = donHang.DonHangID }) |
+                    @if (donHang.TrangThaiDonHang != "Hoàn thành" && donHang.TrangThaiDonHang != "Bị huỷ")
+                    {
+                        @Html.ActionLink("Hoàn thành", "CapNhatTrangThai", "MayTinh", new { madh = donHang.DonHangID, trangthai = "Hoàn thành" },
+            new { onclick = "return confirm('Bạn có chắc muốn chuyển trạng thái sang Hoàn thành không?');" })
+
+                        @: |
+
+                        @Html.ActionLink("Huỷ", "CapNhatTrangThai", "MayTinh", new { madh = donHang.DonHangID, trangthai = "Bị huỷ" },
+            new { onclick = "return confirm('Bạn có chắc muốn huỷ đơn hàng này không?');" })
+                    }
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="@Url.Action("test", "MayTinh")" class="btn btn-primary">Quay lại</a>

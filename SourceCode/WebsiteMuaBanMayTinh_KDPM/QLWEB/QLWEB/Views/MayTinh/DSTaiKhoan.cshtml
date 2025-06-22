@@ -1,0 +1,49 @@
+﻿@model IEnumerable<QLWEB.Models.KhachHang>
+@{
+    ViewBag.Title = "Danh sách tài khoản";
+    Layout = "~/Views/Shared/_Layout_.cshtml";
+}
+
+<h2>Danh sách tài khoản khách hàng</h2>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Tên khách hàng</th>
+            <th>Email</th>
+            <th>Trạng thái: Còn hoạt động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var kh in Model)
+            {
+                var daVoHieu = QLWEB.Controllers.MayTinhController.TaiKhoanVoHieu.Contains(kh.KhachHangID);
+                <tr>
+                    <td>@kh.TenKhachHang</td>
+                    <td>@kh.Email</td>
+                    <td>
+                        Trạng thái:
+                        @if (daVoHieu)
+                        {
+                            <span class="text-danger"><strong>Vô hiệu hoá!</strong></span>
+                        }
+                        else
+                        {
+                            <span class="text-success">Còn hoạt động</span>
+                        }
+                    </td>
+                    <td>
+                        <a class="btn btn-info" href="@Url.Action("ChiTietTaiKhoan", "MayTinh", new { id = kh.KhachHangID })">Xem chi tiết</a>
+                        <a class="btn @(daVoHieu ? "btn-success" : "btn-danger")"
+                           href="@Url.Action("VoHieuTaiKhoan", "MayTinh", new { id = kh.KhachHangID })"
+                           onclick="return confirm('@(daVoHieu ? "Mở khoá tài khoản này?" : "Tài khoản đã vi phạm, xác nhận vô hiệu tài khoản này?")');">
+                            @(daVoHieu ? "Mở khoá" : "Vô hiệu")
+                        </a>
+                    </td>
+                </tr>
+            }
+
+       
+    </tbody>
+</table>
+<a href="@Url.Action("test", "MayTinh")" class="btn btn-primary">Quay lại</a>

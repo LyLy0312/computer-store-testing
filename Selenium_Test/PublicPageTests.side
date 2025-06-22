@@ -1,0 +1,483 @@
+{
+  "id": "45843d70-c415-448f-996d-d0f934de4dae",
+  "version": "2.0",
+  "name": "PublicPageTests",
+  "url": "http://localhost:54551",
+  "tests": [{
+    "id": "539a539d-1c05-4a62-bcda-b2b4ddefd0e3",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "53dd05fe-ab43-4c62-8918-1c9a04f6a81f",
+    "name": "PublicPageTests",
+    "commands": [{
+      "id": "c4372c21-ba85-41d7-813a-be2a6d23f4bc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a936e858-ee5b-440c-9a01-bb4e998e0298",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f6fad45-9feb-4eda-a0b0-564c44047006",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.product-item:nth-child(3) .btn-primary",
+      "targets": [
+        ["css=.product-item:nth-child(3) .btn-primary", "css:finder"],
+        ["xpath=//a[contains(@href, '/GioHang/ThemGioHang?MTID=3&returnUrl=%2F')]", "xpath:href"],
+        ["xpath=//div[3]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ecda0d7-18f6-4bb7-8f71-f051f5b35703",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.product-item:nth-child(3) .btn-primary",
+      "targets": [
+        ["css=.product-item:nth-child(3) .btn-primary", "css:finder"],
+        ["xpath=//a[contains(@href, '/GioHang/ThemGioHang?MTID=3&returnUrl=%2F')]", "xpath:href"],
+        ["xpath=//div[3]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ffd2722-526d-4dff-8b1f-22c29adcdf0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=backToTop",
+      "targets": [
+        ["id=backToTop", "id"],
+        ["css=.container > #backToTop", "css:finder"],
+        ["xpath=//button[@id='backToTop']", "xpath:attributes"],
+        ["xpath=//body/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad199a0c-22dd-434b-a63d-25f8f9e912f6",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,566.4000244140625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb8d57ae-9150-4368-94c7-13ccaa72fa41",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=LapWorld💻",
+      "targets": [
+        ["linkText=LapWorld💻", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'LapWorld💻')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'LapWorld💻')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a75fbed-829b-4910-8712-70a545fbd717",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=LapWorld💻",
+      "targets": [
+        ["linkText=LapWorld💻", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'LapWorld💻')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'LapWorld💻')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2c5bc4f-7c02-4caf-8e63-b381d5f5a543",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,993.5999755859375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf9ea4de-5555-4e21-aedf-a521d57a6970",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "255a848d-0e23-490a-892b-07c4e66e6f06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-ad:nth-child(13) img",
+      "targets": [
+        ["css=.product-ad:nth-child(13) img", "css:finder"],
+        ["xpath=//img[@alt='Quảng cáo sản phẩm']", "xpath:img"],
+        ["xpath=//div[13]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7464",
+      "windowTimeout": 2000
+    }, {
+      "id": "b055e87b-eed7-4496-b8a1-1f554b0aaeea",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea3663ec-7f12-4b48-8316-e9d07c975b57",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7464}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd66c310-30b3-4e0c-8518-474393a1f332",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36a96c6d-5b48-43b6-8140-12c820a36120",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94b0018b-e655-4a5f-bae7-2077e12f37a9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.product-ad:nth-child(13) img",
+      "targets": [
+        ["css=.product-ad:nth-child(13) img", "css:finder"],
+        ["xpath=//img[@alt='Quảng cáo sản phẩm']", "xpath:img"],
+        ["xpath=//div[13]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4286918d-0d77-45f7-abdd-fc857217e01d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.product-ad:nth-child(13) img",
+      "targets": [
+        ["css=.product-ad:nth-child(13) img", "css:finder"],
+        ["xpath=//img[@alt='Quảng cáo sản phẩm']", "xpath:img"],
+        ["xpath=//div[13]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5418965a-f98e-48e6-b91e-b8322a92a623",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2680)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df0d85ed-a858-437e-9352-28ad064da499",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4900)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d28156a-862d-43b9-865a-d1676faf652e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,6116)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0f23454-6a34-4037-b846-eb07e0673086",
+      "comment": "",
+      "command": "click",
+      "target": "css=.blog-item:nth-child(5) .blog-link",
+      "targets": [
+        ["css=.blog-item:nth-child(5) .blog-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Xem thêm')])[5]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://gizmodo.com')]", "xpath:href"],
+        ["xpath=//div[5]/div/div[5]/div/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6759",
+      "windowTimeout": 2000
+    }, {
+      "id": "964280b5-2010-4676-9ea8-ec5c6ef3f9cf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6759}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da7395f7-290b-4dca-b3bb-b39d34fa78b7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,13.600000381469727)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1a8e25c-779f-4633-8c08-3fe51acc2438",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,964)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4304fa1b-cab7-4b6e-b769-d859d93010ea",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d11414f7-38ee-4823-982e-ba296bfd01bd",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13741b2a-7ed1-4978-81a0-339e6caa0c05",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.blog-item:nth-child(5) .blog-link",
+      "targets": [
+        ["css=.blog-item:nth-child(5) .blog-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Xem thêm')])[5]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://gizmodo.com')]", "xpath:href"],
+        ["xpath=//div[5]/div/div[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40d3c5f9-8552-4813-8a22-ebca4132457c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.blog-item:nth-child(5) .blog-link",
+      "targets": [
+        ["css=.blog-item:nth-child(5) .blog-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Xem thêm')])[5]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://gizmodo.com')]", "xpath:href"],
+        ["xpath=//div[5]/div/div[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "febf74da-a11a-4de4-8892-f7fdbebd91eb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Điều khoản dịch vụ",
+      "targets": [
+        ["linkText=Điều khoản dịch vụ", "linkText"],
+        ["css=.col-lg-3:nth-child(3) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Điều khoản dịch vụ')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Điều khoản dịch vụ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea0625db-2c6d-406d-aded-e696acffb9ef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Điều khoản dịch vụ",
+      "targets": [
+        ["linkText=Điều khoản dịch vụ", "linkText"],
+        ["css=.col-lg-3:nth-child(3) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Điều khoản dịch vụ')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Điều khoản dịch vụ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53d28102-68d1-4897-a36d-3c66fa5879b5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Điều khoản dịch vụ",
+      "targets": [
+        ["linkText=Điều khoản dịch vụ", "linkText"],
+        ["css=.col-lg-3:nth-child(3) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Điều khoản dịch vụ')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Điều khoản dịch vụ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90cfb8be-7273-4194-9c47-efa78d3a7f1a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1013.5999755859375)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b351c8c9-889c-430a-863e-f9fb37f4d402",
+    "name": "PublicPageTests1",
+    "commands": [{
+      "id": "66e0eb34-5e86-451e-bb6d-2d92ff0b0e33",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5ea6ad5-a52e-4bd9-b9a7-f773aef09b77",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6669c727-15ab-46c3-bff6-fd97248a7d85",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.carousel-control-prev",
+      "targets": [
+        ["css=.carousel-control-prev", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='adCarousel']/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cade54b-1a25-4454-889a-c433c2280bc3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.carousel-control-prev",
+      "targets": [
+        ["css=.carousel-control-prev", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='adCarousel']/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ec195fc-b45d-4501-a132-45715c1e6e34",
+      "comment": "",
+      "command": "click",
+      "target": "id=chatbot-btn",
+      "targets": [
+        ["id=chatbot-btn", "id"],
+        ["css=#chatbot-btn", "css:finder"],
+        ["xpath=//button[@id='chatbot-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='chatbot-container']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'💬')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "752df6e3-d255-45a6-bf12-833473adf53b",
+      "comment": "",
+      "command": "click",
+      "target": "id=chatbot-message",
+      "targets": [
+        ["id=chatbot-message", "id"],
+        ["css=#chatbot-message", "css:finder"],
+        ["xpath=//input[@id='chatbot-message']", "xpath:attributes"],
+        ["xpath=//div[@id='chatbot-input']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7450655e-69e1-41e2-b5db-09dcb6cb9f03",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=chatbot-send",
+      "targets": [
+        ["id=chatbot-send", "id"],
+        ["css=#chatbot-send", "css:finder"],
+        ["xpath=//button[@id='chatbot-send']", "xpath:attributes"],
+        ["xpath=//div[@id='chatbot-input']/button", "xpath:idRelative"],
+        ["xpath=//div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gửi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e03287cc-a2a7-488a-b6a3-d1b502d272f9",
+      "comment": "",
+      "command": "type",
+      "target": "id=chatbot-message",
+      "targets": [
+        ["id=chatbot-message", "id"],
+        ["css=#chatbot-message", "css:finder"],
+        ["xpath=//input[@id='chatbot-message']", "xpath:attributes"],
+        ["xpath=//div[@id='chatbot-input']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "54c89113-8f1a-45c4-b07e-44d413e239ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=chatbot-send",
+      "targets": [
+        ["id=chatbot-send", "id"],
+        ["css=#chatbot-send", "css:finder"],
+        ["xpath=//button[@id='chatbot-send']", "xpath:attributes"],
+        ["xpath=//div[@id='chatbot-input']/button", "xpath:idRelative"],
+        ["xpath=//div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gửi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "206b7199-2e8b-44ca-8691-22079d407873",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=chatbot-send",
+      "targets": [
+        ["id=chatbot-send", "id"],
+        ["css=#chatbot-send", "css:finder"],
+        ["xpath=//button[@id='chatbot-send']", "xpath:attributes"],
+        ["xpath=//div[@id='chatbot-input']/button", "xpath:idRelative"],
+        ["xpath=//div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gửi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b61aa0ff-74a0-4c29-b0bb-989e7d0aa4bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=chatbot-close",
+      "targets": [
+        ["id=chatbot-close", "id"],
+        ["css=#chatbot-close", "css:finder"],
+        ["xpath=//span[@id='chatbot-close']", "xpath:attributes"],
+        ["xpath=//div[@id='chatbot-header']/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e5f3ee9-cb1e-446e-b912-1d4781880dfe",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.carousel-control-prev",
+      "targets": [
+        ["css=.carousel-control-prev", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='adCarousel']/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "74a43d19-0712-4497-b0e7-a08813c9cd6e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["539a539d-1c05-4a62-bcda-b2b4ddefd0e3"]
+  }],
+  "urls": ["http://localhost:54551/"],
+  "plugins": []
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="88842cd1eca74f85a87526d2d31b2e8b" Name="Diagram1">
+        <EntityTypeShape EntityType="CuaHangMayTinhModel.CTDonHang" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangMayTinhModel.DanhGia" Width="1.5" PointX="8.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangMayTinhModel.DanhMuc" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangMayTinhModel.DonHang" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangMayTinhModel.KhachHang" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangMayTinhModel.LIENHE" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangMayTinhModel.MT" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <AssociationConnector Association="CuaHangMayTinhModel.FK_CTDonHang_DonHangID" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangMayTinhModel.FK_CTDonHang_MTID" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangMayTinhModel.FK_DanhGia_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangMayTinhModel.FK_DanhGia_MT" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangMayTinhModel.FK_MT_DanhMucID" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangMayTinhModel.FK_DonHang_KhachHangID" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangMayTinhModel.FK_LIENHE_KHACHHANG" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,163 @@
+﻿@model QLWEB.Models.Forgot
+
+@{
+    ViewBag.Title = "Forgot";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quên Mật Khẩu</title>
+    <link rel="stylesheet" href="~/Content/Css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #65b8f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+                color: #007bff;
+                text-align: center;
+                margin-bottom: 20px;
+                font-weight: 600;
+        }
+
+        .btn-primary {
+            width: 100%;
+            font-weight: 600;
+        }
+
+        .text-muted {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .popup {
+            background: #fefefe;
+            padding: 20px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+        /* Hiệu ứng xuất hiện */
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Tiêu đề thông báo */
+        .popup h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        /* Nút đóng */
+        .close-btn {
+            background: #d9534f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .close-btn:hover {
+                background: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+
+        @if (Session["message"] != null)
+        {
+            <div class="overlay" id="popupOverlay">
+                <div class="popup">
+                    <h3>Thông báo</h3>
+                    <p>@Session["message"].</p>
+                    <button class="close-btn" onclick="closePopup()">Đóng</button>
+                </div>
+            </div>
+
+        }
+        @{
+            HttpContext.Current.Session.Remove("message");
+        }
+
+        <h2>Quên Mật Khẩu</h2>
+
+        @using (Html.BeginForm("Forgot", "MayTinh", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <!-- Email input field -->
+            <div class="form-group mb-3">
+                @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Nhập email của bạn" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Gửi Yêu Cầu</button>
+        }
+
+        <!-- Optional footer text -->
+        <p class="text-muted mt-3">Vui lòng nhập địa chỉ email của bạn để nhận hướng dẫn khôi phục mật khẩu.</p>
+        <a href="/MayTinh/Login" style="text-align: center">Quay lại đăng nhập</a>
+    </div>
+
+    <script>
+        function showPopup() {
+            document.getElementById("popupOverlay").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("popupOverlay").style.display = "none";
+        }
+
+        window.onload = showPopup;
+    </script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
